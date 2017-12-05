@@ -1,0 +1,291 @@
+\documentclass[preprint,11pt]{elsarticle}
+\usepackage{setspace}
+\usepackage{enumitem}
+\usepackage{amsthm}
+\usepackage{color}
+
+\onehalfspacing
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+\newcommand{\commentYM}[1]{\textcolor{blue}{YM: #1}}
+\newcommand{\commentOC}[1]{\textcolor{red}{OC: #1}}
+\newcommand{\commentE}[1]{\textcolor{green}{RelecteurExterne: #1}}
+
+\begin{document}
+
+\title{The proper role of decision sciences in a democracy}
+\author[ld]{Y. Meinard\corref{cor1}}
+\author[ld]{O. Cailloux}
+\cortext[cor1]{Corresponding author}
+\address[ld]{Universit\'e Paris-Dauphine, PSL Research University, CNRS, UMR [7243], LAMSADE, 75016 PARIS, FRANCE}
+
+
+
+\begin{abstract}
+Decisions are a core subject matter for many economic theories and sub-disciplines. The idea that economic, and more generally scientific insights, should guide policy making has ancient roots, dating back at least to Hobbes’ seminal exposition of a science of policy, and in a sense even to Plato's figure of a ``philosopher king''. However, there is nowadays a growing tendency among policy makers to call for scientific knowledge to buttress policy-making and implementation. In this article, we elaborate a framework clarifying the normative status of practices that consist in using insights from decision sciences to support political decision-making in this way in Western, contemporary democracies. We begin by exploring accounts of the role of decision sciences that more or less underlie a large part of the economic literature. In their various guises, these accounts attempt to draw an impermeable divide between factual and normative claims, and to justify the role of decision science as confined to the factual realm. We recall the largely accepted reasons why such models should be considered defective. We then explore an alternative account, which locates the purported role of decision sciences upstream democracy, and argue that it is defective as well. We eventually elaborate yet another account and strive to defend it.
+
+\end{abstract}
+
+\begin{keyword}
+Democracy, Decision Aiding, Ethics of Operational Research, Normative Economic
+\end{keyword}
+
+\maketitle
+
+\section{Introduction}
+
+\commentE{Ph. Grill: peut-être commencer directement par un ex, pour intéresser le lecteur économiste?}
+
+\noindent Decisions are a core subject matter for many economic theories and sub-disciplines. In this article, we will use the loose phrase ``decision sciences'' to refer to all these economic approaches, which take decision-making as their main topic, ranging from operational research to social choice theory, through public choice theory, the microeconomic theory of choice, rational choice theory, multi-criteria decision aiding methodology, and so on.
+
+\commentOC{Many will consider OR and MCDA as not a part of economy. Replace by “scientific”?}
+\commentYM{Tout dépend d'où on soumet. Si revue d'économie ou philo éco, on laisse comme ça. Si on envoie à une revue d'OR ou de philo, on change}
+
+Some of the studies gathered under this umbrella present themselves as purely academic contributions, concerned only with establishing scientific results. However, as pointed out by \cite{tsoukias_policy_2013} and\cite{marchi_evidence-based_2016}, among others, there is a growing tendency among policy makers to call for scientific knowledge to buttress policy-making, often in a so-called ``evidence-based'' approach. This is a call for knowledge to become advice, and for purportedly scientific propositions to endorse the normative status of prescriptions. Though this tendency might have indeed gained prominence, or rather visibility, in recent years, the idea that economic, and more generally scientific insights, should guide policy making has ancient roots, dating back at least to Hobbes’ seminal exposition of a science of policy \citep{skinner_reason_1996}, and in a sense even to Plato’s figure of a ``philosopher king''. Issues such as whether the wisest should rule the masses, or how scientific insights can contribute to collective decision-making in different political regimes, are accordingly addressed by a vast literature. In this article, we claim neither to exhaustively review this immense literature, nor to do justice to all the aspects of the issues it tackles. What we want to do is to elaborate a framework clarifying the normative status of practices that consist in using insights from decision sciences to support political decision-making in western, modern democracies.
+
+By talking about ``normative status'', we mean that we want to clarify the extent to which these practices are indeed normative, and to articulate a normative account of them. The term ``normative'' will be taken here in a broad sense, to refer to the large set of issues concerned with eludicating the content of concepts such as ethics, justice, the good and the just, and so on. We emphasize from the outset that, though this understanding is broad, it is not all-encompassing. In particular, in our understanding of ``normative'' in this article, we exclude purely positive or purely empirical attempts to capture the above mentionned notions. For example, empirical studies aimed at capturing what people in a given group mean when using the term ``justice'' does not fall within our definition of a ``normative'' inquiry.
+
+Based on this understanding of ``normative'', the question articulated above in terms of ``normative status'' can accordingly be reformulated as: why and to what extent can one consider that using insights from decision sciences to aid political decision-making is something that ought to be done? A similarly permissive approach will characterize our usage of the terms ``values'' and ``value-judgments''.
+
+We will tackle the above question here only in the context of what we will call ``western, modern democracies''. This phrase will also be understood in a very broad sense. We do not want to confine this inquiry to a specific theory or vision of democracy. An immense literature in a large series of disciplines has produced a vest array of competing definitions of democracy. As our rationale will unfold in this article, we will be led from time to time to refer explicitly to several of these understandings of the term ``democracy''. But the question that we tackle is not anchored in any of these theories. This question owes part of its significance and importance to the fact that it uses the idea of “western, modern democracies” in the largely undetermined sense in which one uses it in ordinary conversation, broadly to refer to the kind of institutions and political processes that historically emerged and matured in Europe and North-America, and some of the values and principles that are more or less naturally associated with them.
+
+Because the literature on the topics concerned by this article is so vast, one can doubt that anything really new can be written on it. Decision sciences are, however, in perpetual transformation, and so are the political practices in which they are called to play a role. This is why we think that it is not unreasonable to hope that thinking anew these issues can shed new light on them.
+
+This article is divided into eight part. Following the present introduction, sections 2 to 4 analyze approaches that we claim are defective. Sections 2 and 3 explore accounts of the role of decision sciences that more or less underlie a large part of the economic literature. These accounts attempt to draw an impermeable divide between factual and normative claims, and to justify the role of decision sciences as confined to the factual realm. We argue that these accounts fail, for various reasons that have already been articulated in various strands of the literature. These relatively short parts should be seen as a lapidary review of existing knowledge, rather than as an original contribution. Sections 4 and 5 explore an alternative account, which locates the purported role of decision sciences upstream democracy. In our view, this account is implicit in many contemporary approaches. However, to our best knowledge, it has so far never been spelled out explicitly. Sections 6 to 7 elaborate an alternative account and strive to defend it. Section 8 concludes.
+
+\section{A first defective model: Decision science as pure science}
+\noindent The idea that economics is a value-neutral, purely scientific endeavor, is traditionally associated with \cite{robbins_essay_2007}'s classical contribution. This approach admits that value-judgments are essentially non-scientific, and that economics as a science should therefore eliminate them. One might think that the proponents of this model would naturally claim that economic science simply cannot produce policy advices without denaturing itself. Numerous authors have however strived to demonstrate that, even in this approach, economic science manages to produce so-called “policy relevant” results, liable to feed policy advices.
+
+As \cite{baujard_leconomie_2011} recalls, the issue of inter-personal comparisons of utility provided a prominent historical exercise for economists engaged in this endeavor. Inter-personal comparisons of utility involve value-judgments because one cannot claim that a given increase in the welfare of one person outweighs or even is equivalent to a given decrease in the welfare of a second person unless one judges the relative worth of the welfare of the two persons. A prominent conceptual trick to produce policy-relevant results despite the ban on the value-judgments involved in interpersonal comparisons of utility is the strong Pareto principle, stating that state of affairs x is better than state of affairs y if no one is worse off in x as compared to y, and at least one person is better off in x as compared to y. But this principle has two important defects. First, it leaves economists incapable to formulate any policy-relevant result in situations where there is no state of affairs that strongly Pareto dominates the others, which is bound to happen quite often. 
+
+\commentOC{ On s'egare : c'est sans-doute vrai,
+mais sur un plan tres différent de ce dont je pensais qu'on
+discutait ici, à savoir la validité en principe du raisonnement
+``sans valeur'', plutot que son efficacite pratique.}
+\commentYM{je suis d'accord, on est sur un plan different du reste de la discussion. Pour autant, il ne me semble pas que cette petite phrase coute grand chose, et si l'on veut que le texte ait une portee sur la question de ce que les sciences de la decision peuvent apporter dans les politiques REELLES, ce point me semble important}
+
+Second, as famously emphasized by \cite{sen_rationality_2004}, among others, the strong Pareto principle is itself normative and, in a sense, not minimally so. The idea that the Pareto principle is normative is largely accepted, but it is often presented as ``minimal'', in the sense that it seems innocuous to admit that most people, if not everyone, accepts this normative principle. We argue that this claim is more debatable than most authors seem to admit. Take for example a slightly unequal situation \emph{x} where individual \emph{i} is quite well-off whereas individual \emph{j} is poor. Compare with situation \emph{y} where \emph{i} receives a bonanza and \emph{j}'s situation is unchanged. \emph{y} Pareto dominates \emph{x}, but is considerably more inequal. The idea that everyone would claim that \emph{y} is better than \emph{x} is far from self-evident. It relies on questionable assumptions about a total absence of aversion to inequality and envy. Of course, one can retort that our argument applies the Pareto principal to wealth, and that if it is applied to some aggregated welfare index integrating aversion to inequality and envy, then it might no longer be the case that \emph{y} Pareto dominates \emph{x}. But this very rejoinder shows how difficult it might be to set the situation so as to render it evident that evryone wiill agree on the Pareto principal. We therefore claim that one has to face the fact that, if one wants to claim that the Pareto principle is minimal, one cannot simply claim that it is self-evident, one has to prove it.
+
+Despite the fact that economics is often enough presented as a science in ordinary conversation, there is now a large consensus that the model of economics as a pure science is a mirage. Sciences are all anchored in values, be they only epistemic values \cite{longino_science_1990}. Because many economic studies explicitly tackle normative issue, the role of values is all the more prominent in this discipline. And in any case, as soon as economic pieces of knowledge are used to produce advices, the simple fact that they are used for that purpose unavoidably has a normative dimension. The model of economics as pure science is therefore not only elusive, but also irrelevant in contexts such as the ones concerned by our reasoning here.
+
+\commentOC{je trouve la section 2 peu utile.}
+\commentYM{je suis d'accord, elle est peu utile. Cependant, je pense qu'un article qui ne contient que des trucs utiles est indigeste, voire complètement illisible. Il faut parfois dire des choses simples avec lesquels tout lecteur se sentira a l'aise, d'une part pour qu'on ne puisse pas nous dire qu'on aurait du y penser, d'autre part pour etre un tant soit peu exhaustif, enfin pour rendre les choses digestes. Je dis ca, mais je ne ne serais pas traumatise si on faisait sauter cette section}
+
+\section{A second defective model: Decision science as a norm translater}
+\noindent The failure of the pure science model suggests a way out, which consists in integrating value-judgments as axioms with respect to which economists should take an agnostic stance, and whose implications they should take upon themselves to delineate. This is the approach developed by many authors in the social choice literature.
+
+A typical example of this approach is the literature on ``formal welfarism'' \cite{fleurbaey_informational_2003}. The point of this literature is to formalize social welfare functions. The latter are functions allowing to compare several social states of affairs by aggregating individual information in these different states of affairs. The various possible functions have different properties, which in turn capture different value judgments. By formalizing these functions and properties, the economist does not himself make any value-judgement. But he produces a tool that a decision-maker can use: if the decision-maker endorses a given value-judgement, then the economist can identify the corresponding property and then recommend the function that the decision-maker should use. In so doing, the economist is purely value-neutral. This line of argument fails, however, for at least two reasons.
+
+First, the exercise that consists in equating a value-judgment with an axiom is more difficult than most social choice theorists seem to admit, and is perhaps doomed to be elusive. \cite{arrow_social_2012}'s “Non Dictatorship” axiom provides a potent illustration. This axiom states that there is no individual i in society such that for all profiles and all pairs of alternatives x and y, if i prefers x to y, then x is preferred to y at social level. This axioms is expected to be largely accepted as a minimal requirement for any collective decision rule, and this expectation is supposed to echo our shared endorsement of democracy and our shared refusal of dictatorship. However, the notion of dictatorship refers to a complex picture of political arrangements, associated in intricate ways with notions such as arbitrariness, illegitimacy, and rule by force, and so on. Our shared refusal of dictatorship is also nourished by our culture and historical experiences. None of these is captured by Arrow’s axiom. This was certainly no part of Arrow’s ambition, but this is what one presupposes when one assumes that the non-dictatorship axiom captures our shared refusal of dictatorship. Axioms undoubtedly are useful to formalize some aspects of value-judgments. But one cannot expect it to be possible to correctly and completely capture value-judgments or values in axioms. Articulating values is an endless task, using axioms for that purpose is an endless part of this endless task.
+
+\commentOC{ La position a priori raisonnable est
+que l’axiôme ND capture notre refus de la « dictature » dans
+un sens très précis, celui où un individu déciderait de tout,
+sans que les autres préférences ne soient jamais utiles,
+donc.
+ Le raisonnement que tu veux
+critiquer (§ précédent) ne requiert pas d’affirmer que les
+axiomes capturent tout ce qui ressemble à des valeurs. Une
+partie suffisante suffit.}
+
+The second reason to reject this line of argument is actually an outgrown of the point just articulated. One might admit the soundness of an axiom when looking at the axiom itself, while in fact rejecting the implications of this axiom (see Olivier’s papers on this topic). Arrows’ impossibility theorem \cite{arrow_social_2012} again provides an apt example. Arrows’ argument is based on axioms that the author presents as liable to be endorsed by most of his readers. The point of the theorem and the reason why this result is so powerful, is that a series of axioms which are all acceptable proves impossible to combine. A natural way out of the conundrum is to question the spontaneous adherence to the axioms, which prove, on due reflection, to be less commendable.
+The above scheme through which social choice theorists pick-up axioms that correspond to the decision-maker’s value-judgments therefore fails because it is anchored in two unwarranted premises. The first one is that it is undebatable that axioms can aptly capture value-judgments; the second one is that decision-makers are able to make clear and definitive value-judgments once and for all, in the abstract.
+
+\section{A third defective model: Decision science upstream democracy}
+The two models explored above are explicitly defended by some authors in the literature. 
+
+\commentOC{ Are they?}
+
+A third model, more powerful than the above two, can be carved out to attempt to overcome their respective shortcomings. Though it is arguably implicit in many decision science contributions, this model has, to my best knowledge, never been explicitly articulated in the literature. I will accordingly devote a bit more space to present and explain it and its philosophical motivation.
+
+The source of this third model can be found in the debates between procedural and substantive approaches to the legitimacy of political decisions \cite{meinard_what_2017}. These debates are a cornerstone of the literature on democracy in political philosophy. However, the key-terms of these debates are sometimes used in different senses. A brief clarification is therefore useful. There are actually two debates in the literature which are often articulated using the same terms, in spite of their profound differences. It is therefore useful to recall the basic structure of these two debates.
+A first debate deals with the question whether policy decisions deserve to be called democratic depending on the so-called “output” of the decision, or depending of the process through which they have been taken (“input”) \cite{vatn_environmental_2016, backstrand_environmental_2010}. Proponent of an input theory of democracy claim that, if a decision has been taken through democratic procedures, then it is democratic, whatever its output. Proponents of output theories take the opposite stance. These two extreme approaches have absurd implications. A radical input theorist would be led to claim that a decision to disenfranchise half the citizenry would be democratic if taken through a democratic procedure. 
+
+\commentOC{Not an absurd implication if the
+theorist also claims that this result is impossible, when
+proper democratic procedure is applied.}
+
+Symmetrically, a radical output theorist would be led to claim that a benevolent dictator could achieve a democracy. 
+
+\commentOC{ I see no absurdity here. If the
+dictator takes all preferences into account, what is the
+problem?
+}
+
+Both implications are untenable, in the sense that they clash with many of the implications that our language links with the very notion of democracy. 
+
+\commentOC{That’s probably true, but
+something has to give. The usual notion of democracy in
+ordinary, unreflective language is most probably not
+coherent.}
+
+Most authors therefore strive to elaborate theories of democracy that reach the commendable equilibrium between input and output. The output element in the notion of democracy then captures requirements that should be imposed to the proceedings of democratic processes from the outside. If these requirements are not fulfilled, the processes no longer deserve to be called democratic. One easily understands how decision sciences can take advantage from this move. If there is such a thing as an element that should be imposed “from outside” the proceedings of democratic processes, then this thing stands out as a perfect candidate to be a subject matter for decision sciences.
+
+\commentOC{Couldn’t DS also be relevant for
+input processes? DS could tell how to aggregate opinions,
+for example (ND axiom comes to mind).}
+
+The second debate opposes purely procedural to substantive theories of democracy. Substantive theories claim that democracy is a matter of values, which can be materialized either in procedures, or in political outcomes, such as for example in rights that are entrenched in law. An example of such an approach is \cite{brettschneider_value_2006}, who claims that democracy is first and foremost a set of “core values”, which can be materialized in the proceedings of constitutional courts just like it can be in votes and institutional proceedings more usually called “democratic”. As opposed to substantive theories, purely procedural theories claim to account for democracy by delineating formal properties of decision-making procedures that are supposed to be purely value-neutral, and from which democracy would emerge. \cite{habermas_faktizitat_1992} is often presented as the canonical example of such an approach. Purely procedural approaches in that sense are criticized in the literature for being untenable, because it appears impossible to recommend procedural properties while remaining value neutral. For example, a prominent procedural property is universal voting right. Critics of purely procedural approaches argue that there can be no reason to command universal voting right except if this expresses an endorsement of a value-judgment such as the judgment that human being are equal and should be treated as such. Symmetrically, purely substantive approaches are criticized because, if there is a substance that defines what counts as democratic (as they claim), then it means that there is not even a need for citizens to vote or express their view in order to achieve a democracy, which is bound to appear contradictory.
+These two debates have important similarities, mainly because input theories and purely procedural theories similarly focus on procedures. However, most input theories would be termed substantive by proponents of purely procedural theories, because they promote procedural values, and substantive theories can materialize in both output and input theories. The second debate is a deeply philosophical one, opposing form and substance or values, the first one is more pedestrian, and opposes concrete, worldly procedures, with no less concrete, worldly states of affairs: patterns of endowments, distributions of income, and so on.
+
+The second, more philosophical debate is the more relevant one from our point of view here. This debate indeed drives a wedge thanks to which decision science expertise can enter the scene by the backdoor and find its place upstream any political process. Indeed, whatever the conclusion of the debate, it interestingly frames the issues surrounding democracy in such a way that a role for decision science becomes visible upstream democracy. In the purely procedural approach, decision sciences can play a role in identifying and characterizing the supposed pure procedure—without thereby making any value-judgment. In the substantive approach, decision science can play a role in identifying the substance of democracy—be it a matter of input or output. If a middle way has to be found between these two extremes, in this middle way the proper role of decision science is a bit of the two.
+
+\commentOC{Si je te suis bien, tu proposes une
+autre place à la DS que celle envisagée par le FW (formal
+welfarism). Ce n’est donc pas contradictoire avec le FW, mais
+bien sur un autre plan. Je ne vois pas alors le lien avec la
+critique du FW.
+Pour le dire autrement, je vois deux questions distinctes : 1)
+est-ce que DS est utile dans la perspective FW ; 2) est-ce que
+DS est utile en amont ; et je ne vois pas de lien entre ces
+deux questions.}
+
+\section{Varieties of flight from normativity}
+Now that we have found a place where decision sciences can play a role, we have to investigate the kind of role they can play there. The purely procedural approach seems to offer a possibility for decision sciences to play such a role without compromising with “substance”, that is, without having to make value judgments. By contrast, in the substantive approach, or in any mixed theory involving procedural and substantive approaches, decision science takes it upon itself to address an openly normative task, and in that case we need an account of how it can endorse this task.
+But such formulations are ambiguous. So far, we have taken as synonymous the phrases “making value judgements”, being “substantial” and being “normative”. What do these phrases really mean? To clarify this matter, it is useful to come back to an analysis of the stance articulated by \cite{rawls_political_2005} and \cite{habermas_moralbewustsein_1983}.
+
+\cite{rawls_political_2005} theory (in a sense) epitomizes what \cite{estlund_democratic_2009} called the “flight from substance”. He did not want his theory to make any value-judgment about the kind of state of affair that should prevail in a democratic society. He therefore argued that a policy is democratically legitimate if it is based on a constitution whose justification is acceptable to all “reasonable” citizens. But he did not want to make value judgments about democratic processes either. He therefore further argued that the very definition of reasonableness should be something for reasonable citizens to pick-up. He thereby attempted to eschew making any value-judgments in his account of legitimacy and reasonableness, and expected the content of these concepts to emerge from the historical functioning of democratic institutions. This was supposed to be a complete flight from substance, in the sense that this account was supposed to eschew any value-judgment, whatsoever. If such an approach were tenable, it would provide a positive subject matter for positive decision scientists to study in their attempt to define democracy in a purely positive approach. However, \cite{habermas_reconciliation_1995} showed that Rawls’ reasonableness requirement is unavoidably a counterfactual one: despite Rawls’ claims to the contrary, his criterion is not based on the factual acceptance by people in the flesh, but on counterfactual acceptability by moral persons. Rawls’ flight from substance accordingly abruptly collapses in a retreat back to the substantial inquiry into the nature and features of a moral subject.
+
+\commentE{Juliette: expliquer mieux l'argument de Habermas}
+
+Rawls’ attempt is therefore the paragon of the failure of the flight from substance. Whereas Habermas played a key-role in unveiling the problems crippling Rawls’ approach, he himself embarked on a flight of his own, which has both important differences and interesting similarities with Rawls’ flight from substance. \cite{habermas_moralbewustsein_1983}'s usage of the notion of “performative contradiction” is particularly interesting in this respect. Habermas deploys this argument in his presentation of his “discourse ethics”. He is concerned to provide foundations for the normative principles structuring his discourse ethics. In broad outline, this argument states that refusing to accept the purportedly minimal normative discourse ethics would be committing a contradiction. This means that everyone implicitly already admits the tenets of discourse ethics. 
+
+\commentOC{Do you mean that if everybody
+accepts some principle, then that principle ceases to be
+normative? Then does it apply to Pareto dominance as well?}
+
+If this is the case, the performative contradiction argument is a positive one, not a normative one. Therefore, if the performative contradiction argument is successful, then it provides a positive material for decision scientists (among others) to study without stepping outside the realm of positive science, but with normative bearings. Unfortunately, the performative contradiction argument fails to evacuate normativity. Habermas himself never articulated his approach as a rejection of normativity, and he probably did not intend to evacuate normativity altogether. 
+
+\commentOC{why?
+}
+
+But by falling back upon a supposedly always already entrenched consensus, he went a step farther than Rawls, in the direction of the flight from substance and beyond. He not only eschewed taking a stance on what is a good or a bad policy, or on what is a good or a bad procedure, he went as far as striving to show that there is no stance to be taken about the foundations of morals, because we all always already agree on them. This is not only a flight from substance, this a flight from any avocatory element is normative attitude. 
+
+\commentOC{ Can’t parse this sentence}
+
+But once one has eliminated any advocatory element in normativity, once one has admitted that normative discourse never consists in defending anything, then what is the difference between a normative discourse and a positive discourse on normativity? In is unclear how Habermas would answer this question. What is clear from his writing is that he had an acute awareness of the impossibility to develop a perfectly satisfactory positive account of normative behavior.
+
+In any case, the performative contradiction fails, because, rather than evacuating normativity, it hides its normative content in its implicit assumption that contradiction ought to be excluded. Can it justify this assumption? It cannot do it simply by claiming that we all already accept that contradictions should be avoided, because this would lead to an infinite regress.
+
+At this stage, it appears that the three failed models explored above (sections 2-3-4-5) share a pivotal feature: they all strive to salvage decision scientists from a task they don’t want to take upon themselves: make value-judgments, advocate a vision. In this sense, these models exemplify a flight from advocacy. 
+
+\commentOC{making value judgments ≠
+advocating a vision. A model in physics advocates a vision
+(such as heliocentrism) and makes no value judgments. The
+validity of the model rests upon its falsifiability and its non
+falsification. (I know it is simplistic, but it’s the way.)
+In DS, we have to give up neutrality and embrace
+advocating; but we must exclude debatable (non
+consensual) value-judgment.
+In philosophy of DS, we have to keep neutrality, exclude
+advocating and exclude debatable value-judgment. I believe
+our other article shows a possible way to do it for
+individuals.}
+
+In the three models explored above, the flight from advocacy appears to be a failed strategy. It mainly renders invisible the normative content of theories and arguments. Instead of clinging to this stance, I suggest that we have to take upon ourselves to reflexively identify the normative stance that we take, as decision scientist, when we do our job. We have to inquire into the very normative foundations of our deeds and creeds as decision scientists.
+
+\section{Two visions of what ought to be done}
+\commentE{P. Grill: tester sur le réalisme moral de Putnam}
+Advocacy, in its crudest form, has its drawbacks, however. Though the failures of the flight from advocacy suggest that advocacy should not be completely abandoned, it is therefore important to catch a more clearly articulated picture of normativity, liable to help us to understand how and why advocacy can become a problem, and how and why we can retain it. For that purpose, I want to elaborate on a very basic structure of normative reasoning. There are, I argue, two very different approaches to what ought to be done. The first one I call “moral realism”, and the second one “the quest for justifications”.
+Moral realism is the attitude of people who admit that they have a special access to a form of moral truth, and therefore can sometimes claim, without further ado, that this or that is “right” or “good”. The quest for justification is the attitude of people who endlessly keep on arguing about the justification of their stances about what ought to be done: there never is a point when they stop arguing and looking for further arguments and simply say “that’s the way it is”. Advocacy is a problem only when it is in the hands of a moral realist.
+
+Indeed, a worrying feature of moral realism is that either it converges towards a quest for justifications, or it collapses in an apology of violence. Indeed, imagine that, as a moral realist, you face a challenge to your vision of what ought to be done. You can reply by justifying your stance, and in so doing you give up realism and lean towards the quest for justifications. Or you can ankylose on your stance and strive to impose it by force. In that case, either violence is part of your vision of what ought to be done, in which case you are stuck in the apology of violence, or your vision of what ought to be done rejects violence and your moral realism is repudiated. The only stable moral realism is therefore the apology of violence—where “stable” means here that this attitude can survive without converging towards the attitude with which we contrast is, that is: the quest for justification.
+
+\commentOC{ Ça me semble clair que la
+recherche de justification est bonne, je ne crois pas que ça
+requière une preuve. Un philosophe remettrait-il ça en
+question ? Par ailleurs, la violence ne peut pas toujours être
+condamnée, c’est une autre question à mon avis. Il faudrait
+peut-être parler de ce qu’il faut faire dans le cas a priori plus
+raisonnable où 1) on adopte la voie de la justification et 2)
+on constate un cul-de-sac. Mais ça me semble être un autre
+débat (et compliqué).}
+
+What about the quest for justifications? Is it stable? The quest for justifications can be transient: one can be ready to argue up to a certain point, and then fall back upon realism. In such a case, the stability of this quest for justification is determined by the stability of the moral realism on which it falls back. What if it is not transient—if it does not fall back upon moral realism? One can claim to take advantage of the structure of reasoning deployed in the substantive vs. procedural debate to reject this possibility. The argument would unfold as follows. If you endorse the quest for justification, it means that you endorse the values underlying the idea that moral stances should be backed by justifications. And these very values are the core of your moral realism.
+
+\commentOC{Il faudrait ici aussi distinguer
+dans moral realism le cas où on s’appuie sur des choses que
+personne ne remet en question (tq le besoin de
+justification).}
+
+ The quest for justification would hence unavoidably fall back on moral realism. However, the brand of moral realism on which the quest for justification would unavoidably fall back is of a very special kind. By definition, if one sticks to this moral realism by violence, one is no longer embarked in the quest for justification. This moral realism is therefore one that immediately falls back upon the quest for justifications. Hence, though the quest for justifications arguably is underlain by values, those values are immediately redirected towards a quest for justifications. The quest for justifications therefore is stable.
+
+The quest for justifications is, I claim, what we should advocate as decision scientist. Because it is stable and it is a very basic moral stance whose sole stable counterpart is the apology of violence, I think that we should not be afraid or shy, as decision scientists, to advocate it. There is no reason to flight this advocatory stance, no reason to (hopelessly) attempt to flight this substance, no reason to strive to reduce it to putative positive foundations.
+
+\commentOC{Qqn remet-il ça en question,
+vraiment ? C’est l’essence même de la philosophie que de
+prétendre que le débat réfléchi est bon. Et il est consensuel
+que DS ne s’adresse pas à ceux qui ne veulent pas débattre
+réflexivement, il me semble. N’y a-t-il pas un risque
+d’enfoncer des portes ouvertes, ici ?}
+
+\section{The recommended model}
+The proposition that I defend in this article is hence that, as decision scientists, we should advocate the quest for justification. This is unquestionably, openly a normative stance, one that we should take upon ourselves to advocate, by arguing in favor of it, and by enacting it—which, by definition, is the same thing.
+This approach faces a difficult problem, however. This problem reflects a basic and very important ambiguity, which actually again reproduces the structure of the procedural/substantive debate. The quest for justification consists in displaying good arguments for the stances we take, judgements we make, etc. But what is a “good” argument: is it one that happens to be accepted, or one that should be accepted?
+The formal literature on argumentation \cite{dung_acceptability_1995,besnard_elements_2008} seems to favor the second option, because it defines arguments as good arguments—as arguments that should be accepted if properly understood. 
+
+\commentOC{Pas nécessairement, chez Dung.}
+
+And so does, as explained above, the Rawlsian and Habermassian literature, because it is concerned with a counterfactual concept of acceptability. More empirically-minded approaches strive to capture the arguments that are acceptable to people, in the sense that people will accept them, if they are given the opportunity to make up their mind about.
+
+\commentOC{Tu en parles au pluriel, mais je ne
+connais pas de telle approche à part la nôtre.}
+
+ Though less theoretical than the above-mentioned philosophical literature, these approaches in their various guises are anchored in counterfactual conditional clauses that they bind themselves to be able to normatively account for. 
+ 
+ \commentOC{ Pas compris.}
+ 
+ So, just like the notion of acceptability appeared to conceal a normative element, so does the notion of opportunity to make up one’s mind about an argument. In the end, empirically-minded approaches prove to be anchored in normative assumptions, which have to do with the goodness of being anchored in justifications, and the goodness of respecting the plurality of points of view that one can have on a given justification.
+ 
+ \commentOC{Mélange décision individuelle et
+collective. L’approche proposée ne requiert par d’accepter
+les points de vues des autres, si c’est pour se forger sa
+propre opinion.}
+ 
+We have to find a way out of this conundrum without falling back on a variant of moral realism. In a recent paper, I ventured a partial solution to the problem \cite{meinard_what_2017}. This partial solution is based on two tenets. First, the idea that one will be able to capture a definitive list of criteria defining what is a good argument, what is the reasonable, what is acceptable, and so on, is illusory. One had better work incrementally, to improve step by step justifications, argumentations, etc. Second, justifiability is not a property of a recommendation formulated by a decision analyst, it is a property of the attitude of the analyst producing it. This approach allowed to articulate a normative doctrine that can be translated into an answer to our question in the present article. This translation would state that, as decision scientists, our quest for justification should consist in:
+\begin{itemize}
+\item[i]	Systematically justifying our recommendations;
+\item[ii]	Being ready to defend them against criticisms, even when none are formulated;
+\item[iii]	Actually enacting this defense, when we actually face criticisms.
+\end{itemize}
+However, as it stands, this approach has two worrying weakness.
+The first weakness can readily be identified by referring to the literature on epistemic injustice \cite{fricker_epistemic_2007}. Some people and group have access to knowledge, others have not. The former are in a position to articulate criticisms, the latter are not. By imposing that decision scientists should be ready to defend their recommendations and enact this readiness, the above approach exposes decision science only to part of the spectrum from which criticisms can come. What if there are no criticisms addressed at us, whereas many could have been, but were not, because of epistemic injustices? Would we still feel confident in claiming that our approach materializes the idea of a quest for justifications in such a case? I don’t think so. There is therefore something amiss in the above account.
+Can we fix the problem by identifying a specific group of people that should be the source of criticisms, or even a procedure that should be used to encourage the formulation of such criticisms? Such an approach would not work, I think, because it is hopeless to believe that we can once and for all identify a relevant group of people (or set of groups of people) and/or a magical procedure. We need a more astute approach. Though incomplete, the above account contains the key to the conundrum. Indeed, this account successfully addresses a problem which is, in a sense, structurally similar to the one we are now addressing. We cannot expect to be able to articulate once and for all what a good justification is. That is why the above account does not spell out a purportedly definitive list of criteria, and rather delineates an attitude on the part of decision analysts. The same trick can do the job here again. We cannot identify once and for all a perfectly relevant group of people and/or a perfect procedure. What we can do is identify an attitude that will be conducive to the quest for justification, and this attitude is a requirement to actively elicit criticisms. This requirement is the missing element in our account to fix its first weakness.
+But this account, although completed to fix the first weakness, still has another worrying weakness, which can be captured by raising the question: when can one admit that one has produced enough justifications? Imagine that you have embarked in a discussion with a stakeholder who always has new criticisms to raise. In such a situation, in our logic, should one admit that you cannot stop the discussion at some point or another? This would give to your contradictor a serious advantage, which certainly is undue: if he is ill-intentioned, he can condemn you to indefinitely argue in vain. The key to solve this new problem can be found in Sen’s contribution to political philosophy. \cite{sen_idea_2009} interestingly distinguished two visions of justice: the transcendental vision and the comparative vision. In broad outline, when applied to the notion of justice, a transcendental vision in his jargon is one that claims to answer questions such as “what is just?”, “what does justice consist in?”, “which criterion can one use to decide if a given situation is just or unjust?” and so on. By contrast, a comparative vision is one that claims that such questions are unanswerable, and that the point of theories of justice is rather to address comparative questions such as “is situation x more just or less just than situation y?” I do not claim in this article to adjudicate the credentials of an application of this account to theories of justice. I simply want to pinpoint that this structure of argument elegantly solves the remaining problem with the above account. If one admits that one cannot give a definitive answer to the question “what is a good application of decision science in a democracy?”, but that this is not too bad, because the only truly relevant question is a comparative one such as “is application A1 better than application A2?”, then one can appreciate the relevance of the above account.
+The comparatist approach is no panacea. It is, in a sense, a deflationary approach, and we should be prepared to live with the corresponding modesty. Besides, it can arouse expectations that it cannot deliver. It is therefore important to clarify what a comparatist reading of our approach cannot do. It does not provide a metric, no generally applicable, mechanical means to compare any two applications without discussions. There is bound to be myriads of hard cases where one application of decision science will appear better than another on some respect, but worse on another respect. We do not claim to solve this problem, and doubt that it can be solved at a general level.
+To sum up, the model that I recommend is that, as decision scientists, we should advocate a quest for justification that consists in:
+\begin{itemize}
+\item[i]	Systematically justifying our recommendations;
+\item[ii]	Being ready to defend them against criticisms, even when none are formulated;
+\item[iii]	Actively eliciting criticisms, especially from people or groups that we have good reasons to think are not spontaneously liable or willing or able to articulate such criticisms;
+\item[iv]	Actually enacting this defense, when we actually face criticisms;
+\item[v]	Understanding our own justifiability in a comparative sense.
+\end{itemize}
+
+\section{Examples}
+\commentE{Juliette : Après, ton 6 est nickel, mais la conclu n’est pas développée finalement…. alors que là, pour le coup je me demande vraiment comment tu t’en sors pour toutes ces apparentes contradictions citées par Jérôme, avec ta question de l’aide à la décision. 
+En fait, je doute un peu que tu puisses raisonnablement appliquer simplement à des cas où, justement, aucune aide à la décision n’a été mise en place au moment où il en avait besoin, afin d’éliciter mieux les arguments et faire un travail de contre-argument sur place et en temps réel (ce qui me semble la seule façon de faire fonctionner ton cadre - ex-post ne fonctionne pas car tu fabriques une vision par défaut partielle de la situation, et où il y a une sur-représentation de la vision du « vainqueur »). Enfin, j’ai du mal à comprendre cette idée d’appliquer un cadre d’aide très « in the flesh » à une reconstruction théorique de cas historique. (je dis ça jusqu’à être contredite, hein ?)
+}
+So far, the argument has been entirely abstract. This section will use a series of example to try to flesh it out to some extent. These example are real examples of events or processes in the recent past. We will add a fictive layer to these real examples, by asking ourselves what kind of advices a decision analyst following our approach would formulate in these various situations.
+
+Let us start by a burning issue in environmental sciences, the current biodiversity crisis. The current rate of species extinctions is unprecedented. Many conservationist succumb to authoritarian temptations. Democracy looks poorly adapted to take bold decisions to save the planet. It seems like there is a choice to be made. Either we believe in democracy, participation, etc., in which case planet Earth will collapse; or an authoritarian regime will save the Planet and Humanity against its own willing. I think that such a debate is ill-conceived, and that the approach developed here solves the problem, at least to some extent. The idea that urgency trumps the need for participation and democracy in an argument like any other. If a justification based on this argument wins, then the decision to trump participation is not undemocratic, in any non-trivial sense.
+
+\commentOC{ Bof. Ta dissolution du débat joue
+sur l’ambiguïté du concept de démocratie. Si on prétend que
+la démocratie, c’est prendre les décisions en fonction des
+jugements délibérés du peuple, alors faire la procédure que
+tu proposes, c’est ne pas céder à l’urgence.}
+
+The same logic shows that this approach can be used to unlock some of the perennial apparent dilemma plaguing the functioning of democratic policies, due to the fact that the above mentioned output/input debate appears undecidable. A typical example in this respect is the case of the 1991 cancellation of the legislative elections in Algeria between the two rounds of the election, following the government’s understanding of the fact that it would certainly be overwhelmingly won by the “Front Islamic du Salut”, championing a largely undemocratic policy agenda. An output theory would call this decision legitimate, an input one would deem it undemocratic. Our approach claims that none of the alternatives (canceling the election or letting it unfold) is intrinsically legitimate, and none is intrinsically more legitimate than the other. The more legitimate one would be the one buttressed more thoroughly by a quest for justification on the part of its champions. This, clearly, is a local answer. Small scale debates here and there probably have unfolded and generated different winners in this respect. There is no general answer to this question. There are illuminating, well-structures local answers.
+
+
+\section*{Acknowledgements}
+Jérôme Lang, Philippe Grill, Juliette Rouchier.
+
+\section*{References}
+
+\bibliographystyle{plain}
+
+\bibliography{decision,philo-eco,beliefs}
+
+\end{document}
