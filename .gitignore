@@ -16,6 +16,7 @@
 *.ps
 *.out
 *.dvi
+*.pdf
 
 *.spl
 
