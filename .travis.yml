@@ -1,0 +1,35 @@
+notifications:
+  email: false
+language: bash
+git:
+  depth: 1
+addons:
+  apt:
+    packages:
+      - latexmk
+#https://packages.ubuntu.com/search?suite=trusty&mode=filename&searchon=contents&keywords=lmroman
+#lmroman10
+      - fonts-lmodern
+#https://packages.ubuntu.com/trusty/all/texlive-latex-extra/filelist
+#nag.sty
+      - texlive-latex-extra
+      - texlive-lang-french
+      - latex-xcolor
+      - pgf
+#siunitx.sty
+      - texlive-science
+#      - texlive-extra-utils
+#      - texlive-font-utils
+#      - texlive-fonts-recommended
+#      - texlive-latex-base
+#      - texlive-latex-recommended
+#      - texlive-pictures
+script:
+  - latexmk -interaction=nonstopmode properplace.tex
+
+deploy:
+  provider: releases
+  api_key:
+    secure: cJV6mXM15Ywatpg7AjQp+Zpjr3u9W9i7vkKbAhXVF9P6eRw6qJmApJDZAX+4K1qay1ZoYk0hwJPcC4xVI5xoPE+5mi1lLlMvlahcPc5GEPMn86ogdMPgJqqknncWi/wGNDA8fDr9U/oPaA3gtET4YLuvK5tHSrg/a4SxcuPxCFP5mv1tA0yeElZ/j4g6jtuHWfHVo1WR3lR3piIC98UkRkgVNJ4XbouGHnVLsw18/7qJNA8fLr1BeQuQP6yv+22MuqbtoMIlyfr928CAdazM3XNnfd2kCws/hb1oYppuLsTSI4w7X9DZ+wNE2QFye3ybsDa83va9kFjHPizxLpdxbH1gu36+Laf2fX5tJRUFrwx0116pQlTaVrZVXnLJsuaCc/TKLhmMISzn0fCr3mOWtjcFD2hSRSrQSHyQ0yR7CsbWroOhCLqW3m/cP/FHmdmleyoRvL1grHmtpOb7mtglDhx6ni8wYa/f9fVYERbN07kLwkuBg1WyMyUuSJ1ACAl4Jb1hJMCsO6SmESe89MC3C8YnmDhY64ttkOAYxOVdfGqkEW+QE0Bq/63Cn1WXrlQfgGy1Z4u6wEitNhxLFiPxw752Dy66bS+o3tngygKn+Iyk9Y95cDbNwdO8Z0BY3HCdX7DU9cfVjbdKdgR2dZ7di/VdyTNuvRUs1H3aUnyiXro=
+  file: properplace.pdf
+
