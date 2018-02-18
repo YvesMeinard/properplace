@@ -18,7 +18,7 @@
 \usepackage{natbib}
 \usepackage{doi}
 \usepackage{hyperref}
-\hypersetup{breaklinks, colorlinks, linkcolor=black, citecolor=black, urlcolor={blue!80!black}, bookmarksopen}
+\hypersetup{breaklinks, bookmarksopen, colorlinks, citecolor=black}
 \usepackage{bookmark}% hyperref doc says: Package bookmark replaces hyperref’s bookmark organization by a new algorithm (...) Therefore I recommend using this package.
 \usepackage{cleveref}
 \newcommand{\protectforpdf}[1]{\texorpdfstring{\ensuremath{#1}}{#1}}
@@ -62,6 +62,8 @@
 \newcommand{\fadv}{\mathscr{N}_J}%fuzzy adv
 
 \begin{document}
+%Stupid elsarticle class forces colors AtBeginDocument, need to insist here to override. (https://tex.stackexchange.com/questions/263496/elsarticle-class-how-to-get-coloured-links-without-boxes)
+\hypersetup{citecolor=black}
 \title{Justification and decision sciences}
 
 \author[ld]{Y. Meinard\corref{cor1}}
