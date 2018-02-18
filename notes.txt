@@ -1,4 +1,0 @@
-
-N n'est jamais évident, sauf si c'est \adv au un truc dans le genre, auquel cas on n'arrive à en tirer R 
-
-distiguer les cas : 1) N est évident, 2) à la réflexion, après avoir appliqué \adv, N apparait opportun/adapté/
