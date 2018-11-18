@@ -19,7 +19,7 @@
 \usepackage{doi}
 	\usepackage{etoolbox} 
 	\makeatletter
-	\patchcmd{\@doi}{dx.doi.org}{doi.org}{}{}
+	\patchcmd{\@doi}{http://dx.doi.org}{https://doi.org}{}{}
 	\makeatother
 \usepackage{hyperref}
 \hypersetup{breaklinks, bookmarksopen, hidelinks}
