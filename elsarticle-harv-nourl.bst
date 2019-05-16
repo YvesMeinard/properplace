@@ -366,7 +366,11 @@ MACRO {toplas} {"ACM Trans. Prog. Lang. Syst."}
 MACRO {tcs} {"Theoretical Comput. Sci."}
 
 FUNCTION {write.url}
-{ "" }
+{ url empty$
+    { skip$ }
+    { skip$ }
+  if$
+}
 
 INTEGERS { nameptr namesleft numnames }
 
