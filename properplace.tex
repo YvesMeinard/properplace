@@ -16,7 +16,7 @@
 \usepackage{amsthm}
 \usepackage{mathrsfs}
 \usepackage{color}
-\usepackage{natbib}
+%\usepackage{natbib}
 \usepackage{doi}
 \usepackage{slantsc}
 \usepackage[rightbars]{changebar}
@@ -35,7 +35,10 @@
 %\titlespacing{\subsection}{0pt}{10pt}{0pt}
 %\titlespacing{\subsubsection}{0pt}{10pt}{0pt}
 \newcommand{\protectforpdf}[1]{\texorpdfstring{\ensuremath{#1}}{#1}}
-\bibliographystyle{abbrvnat-noissn-noisbn-nourl}
+%Making sure we follow: “If your source files are in LaTeX, please visit our LaTeX site.” (in https://www.elsevier.com/journals/european-journal-of-operational-research/03772217/guide-for-authors), which gives a bibliographic style file. Style is not consistent with examples given elsewhere in the authors guide.
+\bibliographystyle{elsarticle-harv-nourl}
+%\bibliographystyle{apalike}
+%\bibliographystyle{abbrvnat-noissn-noisbn-nourl}
 \usepackage{etoolbox}
 \apptocmd{\thebibliography}{\raggedright}{}{}
 %\usepackage[nolist,smaller,printonlyused]{acronym}
