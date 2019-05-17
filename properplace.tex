@@ -41,18 +41,16 @@
 %\bibliographystyle{abbrvnat-noissn-noisbn-nourl}
 \usepackage{etoolbox}
 \apptocmd{\thebibliography}{\raggedright}{}{}
-%\usepackage[nolist,smaller,printonlyused]{acronym}
-%\begin{acronym}
-%\acro{DM}{Decision Maker} 
-%\acro{WTP}{Willingness to Pay}
-%\acro{OR}{Operational Research}
-%\end{acronym}
-\usepackage[single]{acro}
-\acsetup{short-format = {\scshape}} 
-\DeclareAcronym{CBA}{short=cba, long={cost-benefit analysis}}
-\DeclareAcronym{DM}{short=dm, long={Decision Maker}}
-\DeclareAcronym{OR}{short=or, long={Operational Research}}
-\DeclareAcronym{WTP}{short=wtp, long={Willingness to Pay}}
+%\usepackage[single]{acro}
+%\acsetup{short-format = {\scshape}} 
+%\DeclareAcronym{CBA}{short=cba, long={cost-benefit analysis}}
+%\DeclareAcronym{DM}{short=dm, long={Decision Maker}}
+%\DeclareAcronym{OR}{short=or, long={Operational Research}}
+%\DeclareAcronym{WTP}{short=wtp, long={Willingness to Pay}}
+\newcommand{\ac}[1]{#1}
+\newcommand{\acp}[1]{#1s}
+\newcommand{\aclp}[1]{#1s[long]}
+\newcommand{\acresetall}{}
 \onehalfspacing
 \newtheorem{theorem}{Theorem}
 \newtheorem{example}{Example}
@@ -113,7 +111,7 @@ Decision Analysis, Normative Economics, Legitimacy, \begin{changebar}Morality\en
 \section{Introduction}
 When analysts use decision sciences to tackle a given concrete problem, they are commonly expected by \acp{DM}, concerned stakeholders and the general public to formulate recommendations $R$. 
 Such $R$ are inevitably conditioned by norms, normative conceptions or value judgments $N$ \citep{funtowicz_science_1993,brans_ethics_2002,mingers_ethics_2011}. 
-%\commentYM{add here Williams, T. (2008). Ethics. In Management Science in Practice (pp. 277-290). Chichester, UK: John Wiley & Sons, Ltd.}
+\commentYM{add here Williams, T. (2008). Ethics. In Management Science in Practice (pp. 277-290). Chichester, UK: John Wiley \& Sons, Ltd.}
 \begin{changebar}We understand this $N$ in a very broad sense, and take it to refer to any element that analysts have to associate with factual statements in order to derive recommendations. 
 They may include or reflect implicitely or explicitely held philosophical stances concerning objectives of decision analysis in general, professional deontology, the ethics of analysts' relationships with clients, but also norms specifying good practices in using various methods, and so on.\end{changebar}
 
@@ -592,7 +590,7 @@ Besides, we also \begin{changebar}consider\end{changebar} here that the recommen
 We thereby leave aside difficulties associated with group decisions \citep{jackson_towards_1984}, stakeholder identification \citep{wang_systemic_2015} and with boundary judgments involving the integration of several individuals in a collective \ac{DM} \citep{midgley_systemic_2000}
 -- not for lack of interest, but because they are too complex to be tackled in the limited space of this article.\end{changebar}
 A prominent avenue for future research is therefore to explore how our framework can contribute to criticize and improve frameworks devoted to tackle the complex issues, such as ``system of systems methodology'' \citep{jackson_towards_1984}, ``critical heuristics'' \citep{ulrich_critical_1987}, 
-``critical rationalism'' \citep{ormerod_critical_2014}, ``systems thinking'' \citep{mingers_review_2010}, ``problem structuring methods'' \citep{hector_problem-structuring_2009}, ``cognitive mapping'' (doi.org/10.1016/S0377-2217(03)00431-4), ``community operational research'' \citep{johnson_emerging_2018} or 
+``critical rationalism'' \citep{ormerod_critical_2014}, ``systems thinking'' \citep{mingers_review_2010}, ``problem structuring methods'' \citep{hector_problem-structuring_2009}, ``cognitive mapping'' \citep{eden_analyzing_2004}, ``community operational research'' \citep{johnson_emerging_2018} or 
 ``stakeholder-oriented multi-criteria decision analysis'' \citep{de_brucker_multi-criteria_2013}.
 
 %Avoids printing section numbers, but leaves entries in the TOC
