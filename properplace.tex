@@ -22,7 +22,6 @@
 \usepackage{doi}
 \usepackage{slantsc}
 \usepackage[rightbars]{changebar}
-%\setlength\linenumbersep{9mm}
 \setlength\changebarsep{7mm}
 	\usepackage{etoolbox} 
 	\makeatletter
@@ -32,15 +31,9 @@
 \hypersetup{breaklinks, bookmarksopen, hidelinks}
 \usepackage{bookmark}% hyperref doc says: Package bookmark replaces hyperref’s bookmark organization by a new algorithm (...) Therefore I recommend using this package.
 \usepackage{cleveref}
-%\usepackage{titlesec}
-%\titlespacing{\section}{0pt}{10pt}{0pt}
-%\titlespacing{\subsection}{0pt}{10pt}{0pt}
-%\titlespacing{\subsubsection}{0pt}{10pt}{0pt}
 \newcommand{\protectforpdf}[1]{\texorpdfstring{\ensuremath{#1}}{#1}}
 %Making sure we follow: “If your source files are in LaTeX, please visit our LaTeX site.” (in https://www.elsevier.com/journals/european-journal-of-operational-research/03772217/guide-for-authors), which gives a bibliographic style file. Style is not consistent with examples given elsewhere in the authors guide.
 \bibliographystyle{elsarticle-harv-nourl}
-%\bibliographystyle{apalike}
-%\bibliographystyle{abbrvnat-noissn-noisbn-nourl}
 \usepackage{etoolbox}
 \apptocmd{\thebibliography}{\raggedright}{}{}
 \usepackage[single]{acro}
@@ -49,10 +42,6 @@
 \DeclareAcronym{DM}{short=dm, long={Decision Maker}}
 \DeclareAcronym{OR}{short=or, long={Operational Research}}
 \DeclareAcronym{WTP}{short=wtp, long={Willingness to Pay}}
-%\newcommand{\ac}[1]{#1}
-%\newcommand{\acp}[1]{#1s}
-%\newcommand{\aclp}[1]{#1s[long]}
-%\newcommand{\acresetall}{}
 \onehalfspacing
 \newtheorem{theorem}{Theorem}
 \newtheorem{example}{Example}
@@ -83,7 +72,6 @@
 \crefname{enumi}{clause}{clauses}
 
 \begin{document}
-%Stupid elsarticle class forces colors AtBeginDocument, need to insist here to override. (https://tex.stackexchange.com/questions/263496/elsarticle-class-how-to-get-coloured-links-without-boxes)
 \hypersetup{citecolor=black}
 \title{Justification and decision analysis}
 
@@ -99,7 +87,6 @@ This article explores the attitude to norms in the academic literature. We argue
 As an alternative to these attitudes, we introduce and recommend a higher level norm on the basis of which, in a given decision situation, a decision analyst can decide, together with the \ac{DM}, whether a given norm underlying a given recommendation can be adopted.
 The point of this higher level norm is to enable the subsequent choices to be justified by the decision analyst and the decision maker. We then identify and discuss a series of requirements that the notion of justification should embody.\end{changebar}
 
-%Many \acp{DM} requesting decision support, many concerned stakeholders and the general public typically expect that applications of decision sciences to concrete problems lead to recommendations. But in fact decision sciences obtain conclusions containing recommendations conditioned by norms or normative conceptions. This article explores the attitudes with respect to norms that can be identified in the academic literature. We argue that these attitudes share a critical blind spot: they evacuate or trivialize the task to help the \ac{DM} to make up her mind about norms. As an alternative to these attitudes, we introduce and recommend a higher level norm, on the basis of which, in a given decision situation, a decision analyst can decide, together with the \ac{DM}, whether a given sub-norm or recommendation can be adopted. The point of this higher level norm is to enable to \emph{justify} the subsequent choices. We then identify and discuss a series of requirements that the notion of justification should embody.
 \end{abstract}
 \acresetall
 \begin{keyword}
@@ -117,8 +104,6 @@ They may include or reflect implicitely or explicitely held philosophical stance
 \begin{changebar}
 The importance of these normative elements $N$ is largely acknowledged in the \ac{OR} literature \citep{churchman_operations_1970,taket_undercover_1994,brans_ethics_2007,picavet_opportunities_2009}, 
 because ``\ac{OR} is a human activity in which \ac{OR} workers engage with other humans to improve human-activity systems'' \citep{ormerod_operational_2013}, which unavoidably raises ``explicit or implicit moral issues'' \citep{diekmann_moral_2013}. 
-% even points the need for analyst to ask themselves ``To what extent am I confortable with the values implicit in particular methodologies?'' \citet{mingers_towards_1997} (p. 421).
-%``Soft \ac{OR}'' approaches are said to have increased the awareness of these ethical dimensions, by emphasizing that defining a problem unavoidably involves choices with ethical dimensions \citep{ulrich_beyond_2003}.
 There is a large consensus, in both \ac{OR} (e.g. \citet{williams_2009}, p.285) and economics \citep{dwyer_scientific_1985, heath_value_1994, sen_rationality_2004, mongin_value_2006, baujard_value_2013},
 that, due to this importance of $N$, objectivity and scientific neutrality, if understood in an absolute sense, are unachievable and irrelevant \citep{le_menestrel_ethics_2004,reisach_creation_2016}. 
 
@@ -174,11 +159,6 @@ We distinguish four attitudes ($A_O$, $A_E$, $A_I$ and $A_J$) which are reminisc
  However, our topic is broader, since we are interested here in the role that $N$ play in a decision support process as a whole, not only in models.
 \end{changebar}
 
-%\commentYM{si on doit raccourcir, je dirais que les annonces de plan au sein des sections sont dispensables}
-%We begin by exploring the literature in decision sciences and argue that this literature tends to evacuate the task to help \acp{DM} to make up their mind about $N$.
-%However, this literature points towards an interesting solution, which consists in referring to a higher level norm.
-%We then explore attempts to elaborate this idea in the philosophical literature, and argue that these attempts are unsuccessful as they stand.
-
 \subsection{Elusive economic attitudes with respect to \protectforpdf{N}}
 \subsubsection{\texorpdfstring{$A_O$}{AO}: The elusive search for ``basic'' \protectforpdf{N}}
 In normative economics, a widespread approach, which we will call $A_O$ (``$O$'' stands for “obvious”), consists in insulating supposedly simple and clear norms. 
@@ -197,23 +177,11 @@ $A_O$ hence flouts neutrality by surreptitiously accepting the unwarranted premi
 some norms $N$ can be found about which \acp{DM} can readily make up their mind.
 
 \subsubsection{\texorpdfstring{$A_E$}{AE}: choosing \protectforpdf{N} that \aclp{DM} “would endorse if they could understand”}
-%$A_O$ is an attitude whereby analysts claim to use decisions sciences while leaving $N$ outside the purview of their scientific inquiry. We have argued that this attitude fails because it is predicated on the implausible premise of the existence of “obvious” norms from which recommendations can directly follow.
 
 A second attitude, $A_E$ (where ``$E$'' stands for “expert”), consists in claiming that \acp{DM} cannot systematically take the time to strive to understand $N$ or are not always willing or able to do so. 
 Decision scientists holding this attitude claim that they have the collective skills to understand decision science and discuss among peers whether this or that $N$ should be accepted. 
 But they do not consider that \acp{DM} should take part in such discussions, because these are technical, difficult discussions. 
 When they arrive at conclusions including recommendations $R$, predicated on $N$ encapsulating axioms that decision scientists collectively deem commendable, they consider themselves entitled to jump to $R$ without bothering to help \acp{DM} to make up their mind about $N$. 
-% Indeed, this would be a waste of time and energy. 
-%At most the decision analyst will invest some time to explain to the \ac{DM} why it was a good idea to endorse $N$. %, or will content himself to think that, if the \ac{DM} were able to understand the axioms, he would endorse $N$.
-%\begin{changebar}
-%This attitude is illustrated by \possessivecite{brans_ethics_2002} call for ``independent ethical experts'' to take charge of the ``ethical pole'' of decision support.
-%\end{changebar}
-
-%\begin{addmargin}[3em]{3em}
-%“\emph{the expected utility theory (...) as formulated by the von Neumann-Morgenstern axioms, is normative in the sense that the theory is ‘absolutely convincing’ which implies that men will act accordingly. If they deviate from the theory, an explanation of the theory and of their deviation will cause them to readjust their behavior. This is similar to the man who tries to build a perpetuum mobile and then is shown that this will never be possible. Hence, on understanding the underlying physical theory, he will give up the vain effort. Or, an individual making a mistake in, say, long division, will clearly correct himself when shown the mistake.}” 
-%\end{addmargin}
-%If understood as referring to a usage of expected utility theory aimed at producing recommendations, this excerpt embodies attitude $A_E$: it \begin{changebar}considers that expected utility theory should convince everybody\end{changebar}.
-%(Notice, however, that the above quotation can also be interpreted as referring to a purely mathematical version of utility theory that does not lead to any recommendations, and therefore falls outside our scope.)
 
 Attitude $A_E$ consists, for the decision analyst, in endorsing a higher-level norm $\mathscr{N}_E$ claiming that expert discussions about norms enable them to make decisions about norms on behalf of \acp{DM}, a questionable moral stance that \citet{estlund_democratic_2009} calls the ``expert/boss fallacy''. 
 It is unlikely that many decision scientists really wholeheartedly endorse it. 
@@ -228,14 +196,7 @@ $N$ appears endorsable to the \acp{DM}.%, or to let the \acp{DM} choose or param
 \citet{roy_multicriteria_1996} can be seen as a prominent supporter of $A_I$. 
 Indeed, although he did not use the term “norm” to refer to elements underlying recommendations, he emphasized the need to develop interactions with the \ac{DM} to ensure that, not only the recommendations, 
 but also the building blocks of the decision support process from which they derive should be ``meaningful'' for the \ac{DM}.
-%\begin{addmargin}[3em]{3em}
-% “\emph{the analyst has to interact
-%with the \ac{DM} (or with his representative), in view of co-constructing the model of preferences that the considered method exploits to work out expected results. A key issue is to organize this interaction such that the analyst is able to
-%elaborate meaningful results. This implies that the interaction protocol or the
-%software tool involved should be compatible with the way in which the analyst has
-%been inserted in the decision process, with the way of reasoning of the inquired
-%people, and with their meaning of useful results.}” \citep[pp. 84--85]{roy_questions_2013}.
-%\end{addmargin}
+
 This meaningfulness requirement can be interpreted as a need to render the various elements of the decision support process intelligible for the \ac{DM}.
 And because $R$ are necessarily anchored in $N$, this intelligibility requirement unavoidably includes a requirement that the \ac{DM} \emph{endorses} $N$. 
 \citet{roy_multicriteria_1996} hence implicitly championed a requirement to informally test whether \acp{DM} endorse $N$. 
@@ -248,17 +209,10 @@ Like $A_E$, it is anchored in a higher level norm $\mathscr{N}_I$. But this high
 \begin{changebar}
 \subsubsection{\texorpdfstring{$A_J$}{AJ}: appealing to justifications of \protectforpdf{N}}
 
-%This reference to justification echoes contemporary debates on the role of scientific expertise in policy making, which is often presented as undergoing a crisis of \emph{confidence} \citep{godard_environnement_2015}. 
-%As a response, many expertise settings, \begin{changebar}{procedures} and institutions have evolved (in more or less successful attempts to restore the lost confidence) to increase \emph{transparency}, \emph{pluralism} and \emph{independence}. 
-%These three criteria are largely accepted as requirements to impose on any expertise. 
-%However, they cannot be considered as absolute and applicable in all situations. 
-%As \citet{godard_environnement_2015} points out, in some situations, an excessive transparency can cripple expertise, and independence is, in many respects, unachievable: \begin{changebar}{all experts have their interests}. 
-%Similarly, pluralism denies the very idea that expertise can have a point, if it means that all opinions, however fanciful or extremist, should be given the same weight. Accordingly, these three criteria are better conceived as implications of a more fundamental principle: the need to justify expert opinions. 
-%\citet[][p. 379]{godard_environnement_2015} mentions this idea in passing, in the case of independence: “the right question is not `tell me to whom are you tied', but `tell me which arguments justify your opinion'”. 
-%But a similar rationale applies to the other two criteria: the point of requiring transparency is to render visible the justifications underlying the various expert opinions, or the lack thereof; the point of pluralism is to expose justifications to a large sample of counter-arguments, as diverse as possible.
+
 
 Although they do not explicitly tackle our problem, many authors in the literature, especially in ethics and methodology of \ac{OR},
-endorse a fourth attitude that can seem to offer a solution to our problem. This candidate solution consists in advocating that analysts should \emph{justify} the decision support they provide, and in particular should justify the $N$ from which their recommendations derive.
+endorse a fourth attitude that can seem to offer a solution to our problem. This candidate solution consists in advocating that analysts should \emph{justify} the decision support they provide, and in particular should justify the $N$ from which their recommendations derive (or, equivalently, should produce assertions concerning these $N$ which are all ``warranted'').
 For example, \citet{lahtinen_why_2017} advocate \ac{OR} practices following an ``ideal path'', ``formed by well-\emph{justified} choices''.
 Similarly, \possessivecite{diekmann_moral_2013} defense of ``transparency'' is explicitly anchored in a justification requirement, defining transparency in terms of ``open communication'' and ``clarification''. His presentation of ``integrity'' explicitly refers to ``justification''.
  \possessivecite{beauchamp_principles_2009} criteria to balance principles when they conflict also explicitly refer to justification.
@@ -299,7 +253,6 @@ Rawls did not want his theory to make any value judgment about the kind of state
 He therefore argued that a policy is democratically legitimate if it is based on a constitution whose justification is acceptable by all  “reasonable” citizens, and he further argued that the very definition of reasonableness should be something for reasonable citizens to pick-up. 
 He thereby attempted to eschew making any value judgments in his account of legitimacy and reasonableness. 
 This was supposed to be a complete ``flight from substance'' \citep{estlund_democratic_2009}, in the sense that this account was supposed to eschew all forms of value judgments.
-% If this reasoning were successful, it would allow to derive $R$ from $N ⇒_c R$ by removing the value judgments from $N$, rendering it innocuous to endorse.
 
 This \begin{changebar}approach hence elaborates on the idea to produce justifications, anchors this idea in a reference to acceptability, but strives to eschew specifying criteria to distinguish acceptable justifications from non-acceptable ones.\end{changebar}
 
@@ -321,15 +274,10 @@ He rather argues that all the acts and deeds that consist in making validity cla
 The norms specifically constituting Habermas's discourse ethic are hence anchored in his philosophy of society, which endows them with a specific justification referring to Habermas's theory of communicative action.
 According to this theory, it would be pointless to expect \acp{DM} to make up their mind about these norms, because 
 they are conditions of possibility for a very basic, all-pervasive structure of human action. Their justification is hence unassailable -- or so, the argument goes.
-%Like $A_E$, Habermas's approach is therefore anchored in a higher level norm, $\mathscr{N}_{H}$, capturing the tenets of discourse ethics. 
-%A formulation of this higher level norm is: “For a norm to be valid, the consequences and side effects that its general observance can be expected to have for the satisfaction of the particular interests of each person affected must be such that all affected can accept them freely” \citep{habermas_moralbewustsein_1983}. 
+
 As opposed to proponents of $A_E$, Habermas hence develops foundations to entrench his $\mathscr{N}_{H}$, and these foundations provide him with a reason to claim that a justification based on these foundations is a good justification, which permit to go beyond attitude $A_J$. \end{changebar}
 These foundations are, however, derived from his very specific understanding of communication and its importance in the functioning of human societies, which has been extensively criticized in the literature \citep{heath_communicative_2001,honneth_kritik_1985,benhabib_situating_1992}. 
 
-%\commentYM{s'il faut raccourcir, je pense qu'on peut virer le petit bilan d'étape ci-dessous}
-%By anchoring itself in a higher level norm $\mathscr{N}_E$, $A_E$ paves the way for a satisfactory solution to our problem in this article. 
-%$A_I$ overcomes $A_E$'s shortcomings by pointing the need to find a better higher level norm than $\mathscr{N}_E$, but fails to articulate one. Similarly, Rawls's approach is anchored in a higher level norm $\mathscr{N}_{R}$ that he fails to account for. 
-%Habermas goes a step further by entrenching his higher level norm $\mathscr{N}_{H}$ in his philosophy of society. In the sections to come, our aim is to follow this lead and identify a more relevant higher level norm $\adv$, not derived from Habermas's disputed vision of communicative action. 
 
 \section{The recommended approach}
 \label{sec:recomm}
@@ -340,11 +288,7 @@ We begin with the notion of justification in general: at this level of generalit
 We then progressively clarify and flesh out this idea so as to articulate a concrete notion of justification. Such a concrete notion should no longer be ambiguous, and should enable us to identify a satisfactory $\adv$. 
 To that end, our approach will be similar to the one typically used in ordinary language philosophy \citep{soames_philosophical_2003}: 
 we will draw on everyday intuitions about the meaning of the term ``justification'', and strive to progressively sharpen a specific definition that the term should take in order to play the role that we want it to play, in the very specific context in which we want to use it. 
-To do so, we will take advantage of the arguments developed above against the various attitudes presented in the former section
-%Using the terminology of ``justification'', these arguments can be summarized by saying that these attitudes are anchored in higher level norms that provide \emph{unsatisfactory justifications} to adopting norms $N$ in various decision situations, 
-%in some yet unclarified understanding of the phrase ``unsatisfactory justification''. We will use these arguments to clarify the language intuitions underlying the idea that the above attitudes provide \emph{unsatisfactory justifications}. 
-%This will then enable us
- to sharpen our understanding of the idea of a \emph{satisfactory justification} in our context.
+To do so, we will take advantage of the arguments developed above against the various attitudes presented in the former section to sharpen our understanding of the idea of a \emph{satisfactory justification} in our context.
 
 In the two subsections below, using this \begin{changebar}approach\end{changebar}, we identify a series of requirements that the notion of justification should embody (these subsections draw on provisional ideas introduced by \citet{meinard_du_2013, meinard_what_2017}). 
 The third subsection then presents a set of practical rules that materialize these requirements and participate in fleshing them out. These practical rules specify the attitude that a decision analyst should have, if he sets himself the task to produce \emph{satisfactory justifications} for the $N$ grounding his $R$.
@@ -390,17 +334,9 @@ if it is to make sense, Rawls's theory cannot be about justifications that real 
 In our view, the important idea that Habermas's reasoning conceals is that the notion of acceptability is only convincing if one accepts that the philosopher or the decision scientist, trying to capture what people can find acceptable, 
 allows himself to interact with those people, and thereby goes beyond the approach championed by authors like \cite{boltanski_justification_2006}.
 
-%\subsection{Conjoining the three requirements: primacy of practice}
-%But how can one know that a justification is acceptable in this sense? 
-%We have seen above that \cite{estlund_democratic_2009}’s solution would consist, for the philosopher, in making bold claims about the truth of the criteria used to sort out what is acceptable and what is not. 
-%But a major problem with such an approach is that it contradicts our above requirements of \emph{incrementalism} and \emph{anchorage in real-life acceptability}. 
-%Our proposal is that the relevant notion of justification should embody the following tenet of “primacy of practice”: 
-%
-
 \subsection{Unfolding practical rules}
 The former subsections allowed us to clarify important requirements that the notion of justification should fulfill, in order to play the role we want it to play in applications of decision sciences. 
 We are now in a position to clarify the contours of a practice of justifying that would fulfill those requirements. This practice is materialized by a practical procedure, whose steps are presented below. 
-%instead of searching for acceptability criteria through theoretical reflection, one should take the stance that consists in putting justifications to the test in real-life situations, so as to improve gradually our blunt understanding of what it means for a justification to be acceptable. 
 (The tenets constituting our practical procedure bear a resemblance with \possessivecite{diekmann_moral_2013} ``mid-level'' moral principles, but they aim to be more general -- not being limited to a specific activity such as modeling -- 
 and are not derived from moral theories, but rather from our higher level norm $\mathscr{N}$, which is designed to be more fundamental.)
 
@@ -473,9 +409,6 @@ For that, we would need to have access to all the possible arguments, all the po
 The more modest ambition of the present account is to provide a practical answer to the core question of our inquiry: 
 \emph{as practitioners applying decision sciences to the resolution of concrete problems, how can we make sure that the normative aspects of the decision analysis that we provide do not lead us to take liberties with our scientific neutrality by being dogmatic, paternalist, proselyte, or authoritarian?}
 The answer that we propose is: \emph{we can make sure that we remain scientifically neutral by applying \crefrange{it:argue}{it:provisional}}.
-%\commentOC{In the interest of space, we could remove this end of § (I think I insisted to have it originally but now I wonder what I had in mind).} 
-%Obviously enough, unfolding the process epitomized by formula [i-iv] is bound to fail if the \ac{DM} with whom we work stubbornly rejects all our attempts to reason with him.
-%In such a borderline case, our core question simply cannot be answered, it is just impossible to provide decision support while remaining scientifically neutral.
 
 \begin{example}
 To illustrate the concrete meaning of our reasoning, let us see how it applies to our example of a decision analyst using \ac{CBA} to help a \ac{DM} to decide whether he should implement a given project $P$.
@@ -527,9 +460,7 @@ In this article, we have introduced an account of how, as decision analysts appl
 In particular, our approach to ``justification'' is anchored in an analysis of the usages of the term, we propose to unfold the requirement to produce justification as a practical procedure and, even more fundamentally, 
 our original research question only makes sense against the pragmatic background idea that norms play a key role even in activities that other approaches would categorize as entirely concerned with pure facts.
 However, beyond these fundamental ideas, our reasoning is not tightly anchored in any specific philosophical framework developed by authors in this school of thought.
-%However, interpretations of American pragmatism are debated in the literature, especially in their application to environmental issues \citep{spash_new_2009}.
 We therefore do not place this contribution under the aegis of American pragmatism.
-%, because this would require addressing the above criticisms of this broader framework, which falls beyond our scope.
 \end{changebar}
 
 To ponder on our proposed practical procedure, it is useful to mention three prominent objections that one might want to raise against our approach. A first objection might come from decision scientists who would reduce our argument to a simple call for decision analysts to justify their recommendations, which, they might argue, is what decision analysts already do. This would miss an important aspect of our reasoning. Indeed, our rationale emphasizes that recommendations necessarily rest on norms, and stresses that decision analysts cannot eschew the need to help \acp{DM} to make up their mind about those norms. Current practices address this issue informally, if at all. By contrast, we argue that it is necessary to anchor this important part of applied decision theory in a rigorous methodology -- an objective to which this article attempts to contribute. To that end, we have proposed practical rules that decision analysts should follow in order to obtain justified recommendations. If followed, these practical rules will modify current practices. \citet{cailloux_formal_2018} provide a first instantiation of this account in a formal framework.
@@ -558,25 +489,11 @@ A prominent avenue for future research is therefore to explore how our framework
 \begin{changebar}
 Another important avenue for future works is to explore how decision analysts can adjust their selection of methods (or their combination of parts of methods) in such a was as to reflect their difficulty to justify certain $N$ with some \acp{DM} \citep{mingers_towards_1997}.\end{changebar}
 
-%Indeed, one might point out that even in settings in which a single \ac{DM} is clearly identified \emph{prima facie}, most of the time in effect this \ac{DM} has limited leverage and other stakeholders are always at least informally involved in his decision.
-%This idea could suggest that the relevant notion of justification for decision analysis is not a matter of arguments and counter-arguments that \emph{the \ac{DM}} understands and accepts, but that \emph{the collective involved in the decision} understands and accepts. 
-%Such a rationale however conflates two different kinds of decision situations. 
-%On the one hand, in some decision situations, although a single \ac{DM} is clearly identified, he has to take account of the fact that his power to act is limited, and he has to take a series of stakeholders into account.
-% In such cases, our framework is applicable, and the stakeholders' stances are among the important constitutive elements of the arguments and counter-arguments that our justification procedure should integrate. 
- %On the other hand, in some other decision situations, the real \ac{DM} is a collective: in such cases, our framework needs to be extended or adapted, but we do not see any reason to believe that all the decision situations are amenable to such collective decision settings.  
- %Another limitation that we acknowledge is that we also left aside issues concerning the social responsibility of operational research interventions \citep{ackoff_social_1974,gallo_operations_2004}.
 
-
-
-
-
-%Avoids printing section numbers, but leaves entries in the TOC
 \setcounter{secnumdepth}{0}
 \section{Acknowledgements}
-We thank D. Bouyssou, S. Deparis, P. Grill, M. Nunez and J. Rouchier for powerful comments and suggestions on this manuscript.
+We thank D. Bouyssou, S. Deparis, P. Grill, M. Nunez and J. Rouchier for powerful comments and suggestions on this manuscript, and three reviewers for their constructive and helpful criticisms.
 
-%\singlespacing
-%\setlength\bibsep{0pt}
 \section{References}
 \bibliography{propermanual,proper_revisions}
 
