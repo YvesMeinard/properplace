@@ -36,12 +36,12 @@
 \bibliographystyle{elsarticle-harv-nourl}
 \usepackage{etoolbox}
 \apptocmd{\thebibliography}{\raggedright}{}{}
-%\usepackage[single]{acro}
-%\acsetup{short-format = {\scshape}} 
-%\DeclareAcronym{CBA}{short=cba, long={cost-benefit analysis}}
-%\DeclareAcronym{DM}{short=dm, long={Decision Maker}}
-%\DeclareAcronym{OR}{short=or, long={Operational Research}}
-%\DeclareAcronym{WTP}{short=wtp, long={Willingness to Pay}}
+\usepackage[single]{acro}
+\acsetup{short-format = {\scshape}} 
+\DeclareAcronym{CBA}{short=cba, long={cost-benefit analysis}}
+\DeclareAcronym{DM}{short=dm, long={Decision Maker}}
+\DeclareAcronym{OR}{short=or, long={Operational Research}}
+\DeclareAcronym{WTP}{short=wtp, long={Willingness to Pay}}
 \onehalfspacing
 \newtheorem{theorem}{Theorem}
 \newtheorem{example}{Example}
@@ -73,7 +73,7 @@
 
 \begin{document}
 \hypersetup{citecolor=black}
-\title{Justification and decision analysis}
+\title{On justifying the norms underlying decision support}
 
 \author[ld]{Y. Meinard}\corref{cor1}
 \author[ld]{O. Cailloux}
@@ -82,13 +82,13 @@
 
 \begin{abstract}
 When decision sciences are applied to concrete problems, \acp{DM}, concerned stakeholders, and the general public typically expect clear recommendations.
-As emphasized in particular in the literature on ethical dimensions of OR practice, such recommendations are unavoidably conditioned by norms or normative conceptions.
-This article explores how the academic literature deals with this anchorage of OR practice in norms. 
+\begin{changebar}As emphasized in particular in the literature on ethical dimensions of \ac{OR} practice, such recommendations are unavoidably conditioned by norms or normative conceptions.
+This article explores how the academic literature deals with this anchorage of \ac{OR} practice in norms. 
 Although an extensive literature is devoted to promoting certain norms designed to be largely accepted by decision analysts, a framework specifically devoted to determine, at a general level, how decision analysts can decide which norms should underlie their work, is found lacking.
 To make up for this lacuna, we introduce and recommend a framework on the basis of which, in a given decision situation, a decision analyst can decide, together with the \ac{DM}
 , whether a given norm underlying a given recommendation can be adopted.
 This framework is embodied by a series of practical rules that decision analysts should abide by.
-Altogether, these rules enable decision analysts to provide ``justifications'' for their recommandations -- where the term ``justification'' is given a meaning specifically adapted to the context of interactions between decision analysts and decision makers.
+Altogether, these rules enable decision analysts to provide ``justifications'' for their recommandations -- where the term ``justification'' is given a meaning specifically adapted to the context of interactions between decision analysts and \acp{DM}.\end{changebar}
 
 \end{abstract}
 %\acresetall
@@ -106,26 +106,25 @@ Here, we understand the content of this $N$ in a very broad sense, and take it t
 They may include or reflect implicitely or explicitely held philosophical stances concerning objectives of decision analysis in general, professional duties, the ethics of analysts' relationships with clients, but also norms specifying good practices in using various methods, and so on.
 
 \begin{changebar}
-\citet{churchman_operations_1970} is considered to be the first leading author to have insisted on the importance of value judgements in OR \citep{ormerod_operational_2013}, but their pervasiveness is now increasingly acknowledged by OR academics and practitionners \citep{brans_ethics_2007}, which has led to a florishing literature on ethics in OR. 
-In addition to being pervasive, the complexity of value judgements and their contexts of application create practical dilemmas which cannot be easily solved using general ethical guidelines or codes of conduct \citep{taket_undercover_1994}, and call for interdisciplinary collaboration involving basic research in philosophy, applied ethics and OR \citep{picavet_opportunities_2009}. \end{changebar}Accordingly, because ``\ac{OR}  
+\citet{churchman_operations_1970} is considered to be the first leading author to have insisted on the importance of value judgements in \ac{OR} \citep{ormerod_operational_2013}, but their pervasiveness is now increasingly acknowledged by \ac{OR} academics and practitionners \citep{brans_ethics_2007}, which has led to a florishing literature on ethics in \ac{OR}. 
+In addition to being pervasive, the complexity of value judgements and their contexts of application create practical dilemmas which cannot be easily solved using general ethical guidelines or codes of conduct \citep{taket_undercover_1994}, and call for interdisciplinary collaboration involving basic research in philosophy, applied ethics and \ac{OR} \citep{picavet_opportunities_2009}. \end{changebar}Accordingly, because ``\ac{OR}  
 is a human activity in which \ac{OR} 
 workers engage with other humans to improve human-activity systems'' \citep{ormerod_operational_2013}, which unavoidably raises ``explicit or implicit moral issues'' \citep{diekmann_moral_2013}, there is a large consensus, in both \ac{OR} 
 (e.g. \citet{williams_2009}, p.285) and economics \citep{dwyer_scientific_1985, heath_value_1994, sen_rationality_2004, mongin_value_2006, baujard_value_2013},
 that, due to this importance of $N$, objectivity and scientific neutrality, if understood in an absolute sense, are unachievable and irrelevant \citep{le_menestrel_ethics_2004,reisach_creation_2016}. 
 
 However, most authors also claim that \ac{OR} 
-analysts have a duty to remain neutral with respect to \acp{DM}'s objectives and values
+analysts have a duty to remain neutral with respect to \acp{DM}' objectives and values
 -- echoing Kant’s tenet of duty ethics, translated by \citet{reisach_creation_2016} as a right that every human being enjoys to set her own objectives.
-\begin{changebar}\possessivecite{brans_or_2002} ``Oath of Prometheus'' similarly includes a reference to \ac{DM}
-’s goals 
+\begin{changebar}\possessivecite{brans_or_2002} ``Oath of Prometheus'' likewise includes a reference to \acp{DM}' goals 
 (``As a consultant or an analyst, I commit myself (...) \emph{to assist [decision makers] to meet their goals}...'').
-Although there are debates among OR researchers and practitioners on the extent to which analysts should support the values and objectives of DM \citep{brans_ethics_2007}, even those authors who are the most prone to accept that analysts can question and override DM's values and objectives acknowledge that DM have a \emph{ceteris paribus} legitimacy to express their values and objectives and to expect them to be respected.
+Although there are debates among \ac{OR} researchers and practitioners on the extent to which analysts should support the values and objectives of \acp{DM} \citep{brans_ethics_2007}, even those authors who are the most prone to accept that analysts can question and override \acp{DM}' values and objectives acknowledge that \acp{DM} have a \emph{ceteris paribus} legitimacy to express their values and objectives and to expect them to be respected.
 \end{changebar}A weaker form of neutrality, encapsulated in the requirement to refrain from being \emph{dogmatic, paternalist, proselyte, or authoritarian}, by imposing $N$ we favor in our interaction with \acp{DM}
 , is hence largely accepted. However, because ``most contributions to the ‘ethics’ of \ac{OR}
 , well-taken as they are in drawing our attention to the value content of all \ac{OR}
  practice, tell us (...) little about how to handle ethical conflicts'' \citep{ormerod_operational_2013},
 the existing literature barely explores how to make sure that the $N$ underlying recommendations do not conflict with \acp{DM}
-' values. Our aim in this article is to make up for this lacuna by developing a framework enable decision analysts to determine whether a given norm underlying a given recommendation can be adopted.
+' values. Our aim in this article is to make up for this lacuna by developing a framework dedicated to enable decision analysts to determine whether a given norm underlying a given recommendation can be adopted.
 
 We tackle this question as part of a broader research program analyzing the role of researchers in decision support, in particular in public policy, in the wake of questions initially articulated by \citet{tsoukias_policy_2013}.
 This program includes analyzes of the concepts of legitimacy \citep{meinard_what_2017}, meaning \citep{meinard_utility_2018}, rationality \citep{meinard_rationality_2019} and argumentation \citep{cailloux_formal_2018}, 
@@ -146,7 +145,7 @@ Thanks to her analysis of the context and her computations, the analyst derives 
 In this case, $N$ contains norms characterizing philosophical or ethical stances, including a version of utilitarianism stipulating that one should maximize the sum of a measure of preference inferred from willingness to pay \citep{meinard_ethical_2016}. 
 But $N$ also encompasses other norms, more or less clearly articulated, referring to the usual requirements for a \ac{CBA}
  to be considered to be ``properly'' implemented, such as the claim that the preferences taken into account in the study are the relevant ones,
-that no important costs and benefits was ignored, that the preference elicitation methods used correctly capture preferences, etc.
+that no important cost and benefit was ignored, that the preference elicitation methods used correctly capture preferences, etc.
 
 A concrete instantiation of this abstract example is given by the request, through a public procurement procedure, by the local administration in the Var Department (South-east France), in 2013, to analyze a project to restore dry grasslands in the Lachens summit, 
 a natural mountainous area destroyed by the construction of military buildings which are now abandoned \citep{meinard_etude_2015}.
@@ -176,11 +175,10 @@ These requirements are fleshed out as a series of four simple rules that applica
 
 \section{Varieties of attitudes with respect to N}%\protectforpdf{N}}
 \label{sec:existing}
-In this section, we review attitudes with respect to $N$ in the literature in OR, economics and philosophy.
+In this section, we review attitudes with respect to $N$ in the literature in \ac{OR}, economics and philosophy.
 \begin{changebar}
-Our approach for this review is interpretative: we infer a proposal for a classification of attitudes with respect to $N$ based on our knowledge of the literature in economics, philosophy and \ac{OR}
-. This methodological choice is motivated by the fact that interpretative approaches allow articulating refined judgments on the meaning of practices such as OR (echoing the importance of narrative analysis to understand such practices \citep{white_death_1994}).
-That said, like any hermeneutic claim, the one we are about to articulate is tentative.%, and we must acknowledge at the outset that this methodological approach can also be criticized. In particular, we cannot guarantee that our interpretation of the literature is immune from subjective biases due, for example, to our (unconscious) preference for particular approaches, or to our intelectual personal histories.
+Our approach for this review is interpretative: we infer a proposal for a classification of attitudes with respect to $N$ based on our knowledge of the literature in economics, philosophy and \ac{OR}. This methodological choice is motivated by the fact that interpretative approaches allow articulating refined judgments on the meaning of practices such as \ac{OR} (echoing the importance of narrative analysis to understand such practices \citep{white_death_1994}).
+That said, like any hermeneutic claim, the one we are about to articulate is tentative. %, and we must acknowledge at the outset that this methodological approach can also be criticized. In particular, we cannot guarantee that our interpretation of the literature is immune from subjective biases due, for example, to our (unconscious) preference for particular approaches, or to our intelectual personal histories.
 A more systematic methodology, based on a quantitative review of the literature would certainly provide complementary insights. 
 However, deploying such an approach rigorously in our case raises numerous major methodological challenges which cannot be satisfactorily addressed in the limited space of the present contribution.
 %First, various branches of the literature that we are interested in deal with issues surrounding norms using different terminologies ; in particular, papers in OR, theoretical economics, experimental economics and philosophy use different terms to refer to the same concepts.
@@ -190,8 +188,8 @@ However, deploying such an approach rigorously in our case raises numerous major
 We therefore limit ourselves here to the interpretative approach, and leave complementary quantitative investigations for future works. 
 
 
-Although, as already hinted at in the introduction, the literature contains numerous discussions on ethics and values, or referring more or less directly to normative issues, 
-using this methodology did not allow us to identify contributions specifically devoted to develop a framework addressing our question. 
+Using this methodology led us to notice that, although (as already hinted at in the introduction) the literature contains numerous discussions on ethics and values, or referring more or less directly to normative issues, 
+none of these contributions truly provides a framework specifically addressing our question. 
 Most contributions address it peripherally, in the sense that their main focus is not to theorize their attitude towards $N$. Others take advantage of existing philosophical framework delineating an attitude towards $N$, but do not discuss this attitude for itself.
 In both cases, they therefore provide insight which are important but are not organized as a dedicated framework.
 
@@ -232,8 +230,7 @@ But they do not consider that \acp{DM}
 When they arrive at conclusions including recommendations $R$, predicated on $N$ encapsulating axioms that decision scientists collectively deem commendable, they consider themselves entitled to jump to $R$ without bothering to help \acp{DM}
  to make up their mind about $N$. 
 
-Attitude $A_E$ consists, for the decision analyst, in endorsing a higher-level norm $\mathscr{N}_E$ claiming that expert discussions about norms enable them to make decisions about norms on behalf of \acp{DM}
-, a questionable moral stance that \citet{estlund_democratic_2009} calls the ``expert/boss fallacy''. 
+Attitude $A_E$ consists, for the decision analyst, in endorsing a higher-level norm $\mathscr{N}_E$ claiming that expert discussions about norms enable them to make decisions about norms on behalf of \acp{DM}, a questionable moral stance that \citet{estlund_democratic_2009} calls the ``expert/boss fallacy''. 
 It is unlikely that many decision scientists really wholeheartedly endorse it. 
 Besides, to the best of our knowledge, the literature does not specify what is precisely required (when adopting  $\mathscr{N}_E$) for an expert to decide that “enough” discussion has taken place in the expert community and that a consensus has been reached concerning a given $N$. 
 Furthermore, the fact that a norm has been considered acceptable in the abstract by the scientific community does not guarantee that it is acceptable in its use by the analyst in a concrete context.
@@ -241,20 +238,13 @@ Furthermore, the fact that a norm has been considered acceptable in the abstract
 \subsubsection{\texorpdfstring{$A_I$}{AI}: informally testing whether \aclp{DM} 
 endorse \protectforpdf{N}}
 The blatant weaknesses of $A_E$ suggest a pragmatic variant, $A_I$, with $I$ standing for “informal”. 
-This is the attitude of decision analysts who reject $A_E$'s idea that decision scientists can decide on $N$ on behalf of \acp{DM}
-, and therefore make a point of informally discussing the meaning of $N$ with \acp{DM}
- to verify that %the specifics of the situation are such that 
-$N$ appears endorsable to the \acp{DM}
-.%, or to let the \acp{DM} choose or parameterize the norms applicable to the situation.
+This is the attitude of decision analysts who reject $A_E$'s idea that decision scientists can decide on $N$ on behalf of \acp{DM}, and therefore make a point of informally discussing the meaning of $N$ with \acp{DM} to verify that %the specifics of the situation are such that 
+$N$ appears endorsable to the \acp{DM}.%, or to let the \acp{DM} choose or parameterize the norms applicable to the situation.
 
 \citet{roy_multicriteria_1996} can be seen as a prominent supporter of $A_I$. 
 Indeed, although he did not use the term “norm” to refer to elements underlying recommendations, he emphasized the need to develop interactions with the \ac{DM}
  to ensure that, not only the recommendations, 
-but also the building blocks of the decision support process from which they derive should be ``meaningful'' for the \ac{DM}
-.
-
-This meaningfulness requirement can be interpreted as a need to render the various elements of the decision support process intelligible for the \ac{DM}
-.
+but also the building blocks of the decision support process from which they derive should be ``meaningful'' for the \ac{DM}. This meaningfulness requirement can be interpreted as a need to render the various elements of the decision support process intelligible for the \ac{DM}.
 And because $R$ are necessarily anchored in $N$, this intelligibility requirement unavoidably includes a requirement that the \ac{DM}
  \emph{endorses} $N$. 
 \citet{roy_multicriteria_1996} hence implicitly championed a requirement to informally test whether \acp{DM}
@@ -264,8 +254,7 @@ As another example, one can think about \possessivecite{raiffa_back_1985} claim 
 
 The problem with $A_I$ is that it combines a scientific approach to arrive at $R$, with an informal, loose approach to lead \acp{DM}
  to make up their mind about $N$.
-Like $A_E$, it is anchored in a higher level norm $\mathscr{N}_I$. But this higher level norm is not clearly articulated. It encapsulates the idea that decision analysts cannot make decisions about $N$ on behalf of \acp{DM}
-, but does not specify precisely what they should do.
+Like $A_E$, it is anchored in a higher level norm $\mathscr{N}_I$. But this higher level norm is not clearly articulated. It encapsulates the idea that decision analysts cannot make decisions about $N$ on behalf of \acp{DM}, but does not specify precisely what they should do.
 
 
 
@@ -273,8 +262,7 @@ Like $A_E$, it is anchored in a higher level norm $\mathscr{N}_I$. But this high
 
 
 
-Although they do not explicitly tackle our problem, many authors in the literature, especially in ethics and methodology of \ac{OR},
-, endorse a fourth attitude that can seem to offer a solution to our problem. This candidate solution consists in advocating that analysts should \emph{justify} the decision support they provide. \begin{changebar} If applied to our reflexion on $N$, this idea suggests that analysts \end{changebar}should justify the $N$ from which their recommendations derive (or, equivalently, should produce assertions concerning these $N$ which are all ``warranted'').
+Although they do not explicitly tackle our problem, many authors in the literature, especially in ethics and methodology of \ac{OR}, endorse a fourth attitude that can seem to offer a solution to our problem. This candidate solution consists in advocating that analysts should \emph{justify} the decision support they provide. \begin{changebar} If applied to our reflexion on $N$, this idea suggests that analysts \end{changebar}should justify the $N$ from which their recommendations derive (or, equivalently, should produce assertions concerning these $N$ which are all ``warranted'').
 For example, \citet{lahtinen_why_2017} advocate \ac{OR}
  practices following an ``ideal path'', ``formed by well-\emph{justified} choices''\begin{changebar}, which presumably include choices concerning $N$, such as choices of goals or principles.\end{changebar}
 Similarly, \possessivecite{diekmann_moral_2013} defense of ``transparency''\begin{changebar}, in his exploration of the principles that should underlie modeling,\end{changebar} is explicitly anchored in a justification requirement, defining transparency in terms of ``open communication'' and ``clarification''. His presentation of ``integrity'' explicitly refers to ``justification''.
@@ -292,8 +280,7 @@ $A_J$ hence appears unsatisfactory because it takes for granted that the notion 
 
 
 \begin{example}
-Let us simply illustrate the meaning of attitudes $A_O$, $A_E$, $A_I$ and $A_J$ in our hypothetical scenario of an application of \ac{CBA}
-.
+Let us simply illustrate the meaning of attitudes $A_O$, $A_E$, $A_I$ and $A_J$ in our hypothetical scenario of an application of \ac{CBA}.
 
 $A_O$ would mean, for the analyst, that she claims that it is clear and evident for \acp{DM}
  to decide whether they endorse, not only preference utilitarianism, but also all the more or less clearly articulated norms specifying all the requirements for a \ac{CBA}
@@ -301,8 +288,7 @@ $A_O$ would mean, for the analyst, that she claims that it is clear and evident 
 
 $A_E$, by contrast, acknowledges that \acp{DM}
  can find it difficult to understand the meaning of this $N$, and might be at a loss trying to decide whether they should endorse it. 
-An analyst adopting $A_E$ would hence fall back upon a community of researchers endorsing $N$ to take the decision to endorse $N$ on behalf of \acp{DM}
-.
+An analyst adopting $A_E$ would hence fall back upon a community of researchers endorsing $N$ to take the decision to endorse $N$ on behalf of \acp{DM}.
 
 An analyst adopting $A_I$ would find $A_E$ unacceptable, and would informally strive to discuss with the \ac{DM}
  to help him decide whether he endorses $N$. But to accomplish this task, the analyst will be left without a rigorous methodology.
@@ -315,7 +301,7 @@ Similarly, an analyst adopting $A_J$ would make a point to justify the $N$ from 
 \label{sec:higher}
 We argued in the former subsection that the attitudes currently found in the decision science literature are unsatisfactory. 
 $A_E$ and $A_I$ however suggest an interesting solution, which consists in referring to a higher level norm, and $A_J$ goes a step further by claiming that this higher level norm might be a justification requirement.
-The philosophical literature contains interesting, deeper explorations of this idea, in particular in debates on “purely procedural” vs. “substantive” normative theories in political philosophy (see \citep{white_challenge_2009} for a presentation of how these philosophical approaches are referred to in the OR literature).
+The philosophical literature contains interesting, deeper explorations of this idea, in particular in debates on “purely procedural” vs. “substantive” normative theories in political philosophy (see \citep{white_challenge_2009} for a presentation of how these philosophical approaches are referred to in the \ac{OR} literature).
 
 Substantive theories account for justice and democracy by explicitly referring to values, whereas purely procedural normative theories strive to avoid value judgments. 
 \cite{rawls_political_2005}’s normative theory of democratic legitimacy is a classical example of a purely procedural theory. 
