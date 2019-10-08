@@ -36,10 +36,10 @@
 \bibliographystyle{elsarticle-harv-nourl}
 \usepackage{etoolbox}
 \apptocmd{\thebibliography}{\raggedright}{}{}
-\usepackage[single]{acro}
+\usepackage[single]{acro} 
 \acsetup{short-format = {\scshape}} 
 \DeclareAcronym{CBA}{short=cba, long={cost-benefit analysis}}
-\DeclareAcronym{DM}{short=dm, long={Decision Maker}}
+\DeclareAcronym{DM}{short=dm, long={Decision Maker}, pdfstring=DM}
 \DeclareAcronym{OR}{short=or, long={Operational Research}}
 \DeclareAcronym{WTP}{short=wtp, long={Willingness to Pay}}
 \onehalfspacing
@@ -91,7 +91,7 @@ This framework is embodied by a series of practical rules that decision analysts
 Altogether, these rules enable decision analysts to provide ``justifications'' for their recommandations -- where the term ``justification'' is given a meaning specifically adapted to the context of interactions between decision analysts and \acp{DM}.\end{changebar}
 
 \end{abstract}
-%\acresetall
+\acresetall
 \begin{keyword}
 Decision Analysis, Normative Economics, Legitimacy, Ethics of Operational Research
 \end{keyword}
@@ -219,8 +219,7 @@ $A_O$ hence flouts neutrality by surreptitiously accepting the unwarranted premi
 some norms $N$ can be found about which \acp{DM}
  can readily make up their mind.
 
-\subsubsection{\texorpdfstring{$A_E$}{AE}: choosing \protectforpdf{N} that \aclp{DM}
- “would endorse if they could understand”}
+\subsubsection{\texorpdfstring{$A_E$}{AE}: choosing \protectforpdf{N} that \texorpdfstring{\aclp{DM}}{\acp{DM}} “would endorse if they could understand”}
 
 A second attitude, $A_E$ (where ``$E$'' stands for “expert”), consists in claiming that \acp{DM}
  cannot systematically take the time to strive to understand $N$ or are not always willing or able to do so. 
@@ -235,8 +234,7 @@ It is unlikely that many decision scientists really wholeheartedly endorse it.
 Besides, to the best of our knowledge, the literature does not specify what is precisely required (when adopting  $\mathscr{N}_E$) for an expert to decide that “enough” discussion has taken place in the expert community and that a consensus has been reached concerning a given $N$. 
 Furthermore, the fact that a norm has been considered acceptable in the abstract by the scientific community does not guarantee that it is acceptable in its use by the analyst in a concrete context.
 
-\subsubsection{\texorpdfstring{$A_I$}{AI}: informally testing whether \aclp{DM} 
-endorse \protectforpdf{N}}
+\subsubsection{\texorpdfstring{$A_I$}{AI}: informally testing whether \texorpdfstring{\aclp{DM}}{\acp{DM}} endorse \protectforpdf{N}}
 The blatant weaknesses of $A_E$ suggest a pragmatic variant, $A_I$, with $I$ standing for “informal”. 
 This is the attitude of decision analysts who reject $A_E$'s idea that decision scientists can decide on $N$ on behalf of \acp{DM}, and therefore make a point of informally discussing the meaning of $N$ with \acp{DM} to verify that %the specifics of the situation are such that 
 $N$ appears endorsable to the \acp{DM}.%, or to let the \acp{DM} choose or parameterize the norms applicable to the situation.
