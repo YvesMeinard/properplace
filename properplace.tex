@@ -1,13 +1,13 @@
 \RequirePackage[l2tabu, orthodox]{nag}%more warnings
 \RequirePackage{silence}\WarningFilter{newunicodechar}{Redefining Unicode character}
-\pdfgentounicode=1 %permits (with package glyphtounicode) to copy eg x ⪰ y iff v(x) ≥ v(y) from pdf to unicode data. 
-\input{glyphtounicode}%nice copy from PDF
-\documentclass[preprint, french, english, 11pt, authoryear]{elsarticle}%english main language
+\pdfgentounicode=1  
+\input{glyphtounicode}
+\documentclass[preprint, french, english, 11pt, authoryear]{elsarticle}
 \usepackage{lineno}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage{lmodern}
-\usepackage{newunicodechar}%able to use e.g. → or ≤ in source
+\usepackage{newunicodechar}
 \usepackage{babel}
 \usepackage{scrextend}
 \frenchbsetup{AutoSpacePunctuation=false, SuppressWarning=true}
@@ -16,9 +16,7 @@
 \usepackage{amsthm}
 \usepackage{mathrsfs}
 \usepackage{color}
-%\usepackage{natbib}
-%\usepackage{lineno}
-%\linenumbers
+
 \usepackage{doi}
 \usepackage{slantsc}
 \usepackage[rightbars]{changebar}
@@ -29,7 +27,7 @@
 	\makeatother
 \usepackage{hyperref}
 \hypersetup{breaklinks, bookmarksopen, hidelinks}
-\usepackage{bookmark}% hyperref doc says: Package bookmark replaces hyperref’s bookmark organization by a new algorithm (...) Therefore I recommend using this package.
+\usepackage{bookmark}
 \usepackage{cleveref}
 \newcommand{\protectforpdf}[1]{\texorpdfstring{\ensuremath{#1}}{#1}}
 %Making sure we follow: “If your source files are in LaTeX, please visit our LaTeX site.” (in https://www.elsevier.com/journals/european-journal-of-operational-research/03772217/guide-for-authors), which gives a bibliographic style file. Style is not consistent with examples given elsewhere in the authors guide. BUT it misses urls, dois, ISBNs, that’s rejectable.
@@ -64,8 +62,7 @@
 \newunicodechar{…}{\ifmmode\ldots\else\textellipsis\fi}
 
 \newcommand{\adv}{\mathscr{N}}
-\newcommand{\fadv}{\mathscr{N}_J}%fuzzy adv
-%Accept overfull hbox up to...
+\newcommand{\fadv}{\mathscr{N}_J}
 \hfuzz=3pt
 \AtBeginDocument{%
   \DeclareFontShape{T1}{lmr}{m}{scit}{<->ssub*lmr/m/scsl}{}%
@@ -101,10 +98,10 @@ Decision Analysis, Normative Economics, Legitimacy, Ethics of Operational Resear
 When analysts use decision sciences to tackle a given concrete problem, they are commonly expected by \acp{DM}, concerned stakeholders and the general public to formulate recommendations $R$. 
 Such $R$ are inevitably conditioned by norms, normative conceptions, values or value judgments $N$ \citep{funtowicz_science_1993,brans_ethics_2002,mingers_ethics_2011}.
 Here, we understand the content of this $N$ in a very broad sense, and take it to refer to all the elements that \begin{changebar} must be associated \end{changebar}with factual statements in order to derive recommendations. 
-They may include or reflect implicitely or explicitely held philosophical stances concerning objectives of decision analysis in general, professional duties, the ethics of analysts' relationships with clients, but also norms specifying good practices in using various methods, and so on.
+They may include or reflect implicitly or explicitly held philosophical stances concerning objectives of decision analysis in general, professional duties, the ethics of analysts' relationships with clients, but also norms specifying good practices in using various methods, and so on.
 
 \begin{changebar}
-\citet{churchman_operations_1970} is considered to be the first leading author to have insisted on the importance of value judgements in \ac{OR} \citep{ormerod_operational_2013}, but their pervasiveness is now increasingly acknowledged by \ac{OR} academics and practitionners \citep{brans_ethics_2007}, which has led to a florishing literature on ethics in \ac{OR}. 
+\citet{churchman_operations_1970} is considered to be the first leading author to have insisted on the importance of value judgements in \ac{OR} \citep{ormerod_operational_2013}, but their pervasiveness is now increasingly acknowledged by \ac{OR} academics and practitioners \citep{brans_ethics_2007}, which has led to a florishing literature on ethics in \ac{OR}. 
 In addition to being pervasive, the complexity of value judgements and their contexts of application create practical dilemmas which cannot be easily solved using general ethical guidelines or codes of conduct \citep{taket_undercover_1994}, and call for interdisciplinary collaboration involving basic research in philosophy, applied ethics and \ac{OR} \citep{picavet_opportunities_2009}. \end{changebar}Accordingly, because ``\ac{OR}  
 is a human activity in which \ac{OR} 
 workers engage with other humans to improve human-activity systems'' \citep{ormerod_operational_2013}, which unavoidably raises ``explicit or implicit moral issues'' \citep{diekmann_moral_2013}, there is a large consensus, in both \ac{OR} 
@@ -126,7 +123,7 @@ and applications in environmental policy evaluations \citep{jeanmougin_mismatch_
 The present article pursues these efforts by addressing the role of the norms underlying decision support interventions.
 
 \begin{example}
-Let us introduce a simple example, to be used in the entire article. %We will structure this example as a Russian doll, with an abstract example and its concrete instantiation in a concrete setting. 
+Let us introduce a simple example, to be used in the entire article.  
 We start with an abstract presentation, which we then instantiate in a concrete setting.
 
 Imagine that an analyst is asked by a \ac{DM} to help him decide whether he should implement a given project $P$.
@@ -147,33 +144,22 @@ In both contexts, the question that we aim to tackle is: when, as decision analy
 \end{example}
 
 \begin{changebar}
-We begin (in \cref{sec:existing}) by exploring how the academic literature portrays the way decision analysts should tackle the anchorage of their practice in norms. This is what we call ``attitudes to $N$'' in the literature. % including attitudes recommending to “justify” the recommendations obtained by the analyst or the process used. 
+We begin (in \cref{sec:existing}) by exploring how the academic literature portrays the way decision analysts should tackle the anchorage of their practice in norms. This is what we call ``attitudes to $N$'' in the literature. 
 We argue that the various attitudes found in the literature share a critical blind spot: they neglect or trivialize the task to help the \ac{DM} to make up her mind about $N$. At best they recommend that analysts' recommendations should be ``justified'', without clarifying precisely the concept of ``justification'' or without giving fundamental grounds for adopting a specific notion of justification among the many possible ones.
 Though we agree with these authors about the importance of justification, we argue that it is crucial to determine precisely which notion of justification should be employed, and why. 
-%We claim that a crucial task is to help the DM to make up her mind about norms underlying recommendations, which constitute our starting point for promoting justification as a possible solution and specifying its sense.
-% and we concur with authors promoting ``justification'' by claiming that a proper justification can provide the solution.
-%We call this  requirement to produce \emph{justifications} a “higher level” norm, $\adv$ (we call $\adv$ a “higher level” norm because $\adv$ can be used to establish if this or that $N$ can be used in a given application of decision sciences, but in itself $\adv$ is too abstract for any $R$ to be directly derived from it.
-%We use here a comparative term (“high\emph{er}”), because our point is simply that $\adv$ does not play the same role as $N$, and places itself “upstream” $N$ ).
 In \cref{sec:recomm}, we therefore elaborate the notion of justification which is needed by spelling out a series of requirements that justifications should satisfy, stemming partly from the shortcomings of attitudes reviewed in the previous section.
-%This serves a double purpose, one theoretical, as a usual quest for more fundamental principles; and one practical: . Our contribution of an answer to this question is by investigating the notion of justification itself.
-These requirements are fleshed out as a series of four simple rules that applications of decisions sciences should follow.% in order to help the \ac{DM}
- %make up her mind about the normative elements underlying the decision analysis she is provided with. \Cref{sec:concl} then briefly concludes.
-
+These requirements are fleshed out as a series of four simple rules that applications of decisions sciences should follow.
 
 \end{changebar}
 
-\section{Varieties of attitudes with respect to N}%\protectforpdf{N}}
+\section{Varieties of attitudes with respect to N}
 \label{sec:existing}
 In this section, we review attitudes with respect to $N$ in the literature in \ac{OR}, economics and philosophy.
 \begin{changebar}
 Our approach for this review is interpretative: we infer a proposal for a classification of attitudes with respect to $N$ based on our knowledge of the literature in economics, philosophy and \ac{OR}. This methodological choice is motivated by the fact that interpretative approaches allow articulating refined judgments on the meaning of practices such as \ac{OR} (echoing the importance of narrative analysis to understand such practices \citep{white_death_1994}).
-That said, like any hermeneutic claim, the one we are about to articulate is tentative. %, and we must acknowledge at the outset that this methodological approach can also be criticized. In particular, we cannot guarantee that our interpretation of the literature is immune from subjective biases due, for example, to our (unconscious) preference for particular approaches, or to our intelectual personal histories.
+That said, like any hermeneutic claim, the one we are about to articulate is tentative.
 A more systematic methodology, based on a quantitative review of the literature would certainly provide complementary insights. 
 However, deploying such an approach rigorously in our case raises numerous major methodological challenges which cannot be satisfactorily addressed in the limited space of the present contribution.
-%First, various branches of the literature that we are interested in deal with issues surrounding norms using different terminologies ; in particular, papers in OR, theoretical economics, experimental economics and philosophy use different terms to refer to the same concepts.
-%Second, in addition to this inter-disciplines terminological diversity, some of the key terms which could be candidates for systematic bibliographic researches, such as for example ``norms'', can be used in very different senses, without it being possible to discriminate these different usages on a systematic basis.
-%Third, the issues we tackle are often enough articulated using so-called ``thick'' concepts (ref Williams), which are partly descriptive and partly normative, but are indistinguishable from irrelevant, purely descriptive usages of the same terms.
-%Similar problems plague most systematic literature explorations, but they are exacerbated in the case of our topic, and therefore raise specific methodological difficulties, which cannot be satisfactorily addressed in the limited space of the current contribution.
 We therefore limit ourselves here to the interpretative approach, and leave complementary quantitative investigations for future works. 
 
 
@@ -189,7 +175,7 @@ Because this typology is interpretative and aims at encompassing a large diversi
  However, our topic is broader, since we are interested here in the role that $N$ play in a decision support process as a whole, not only in models.
 
 
-\subsection{Elusive economic attitudes with respect to N}%\protectforpdf{N}}
+\subsection{Elusive economic attitudes with respect to N}
 \subsubsection{\texorpdfstring{$A_O$}{AO}: The elusive search for ``basic'' \protectforpdf{N}}
 In normative economics, a widespread approach, which we will call $A_O$ (``$O$'' stands for “obvious”), consists in insulating supposedly simple and clear norms. 
 Such norms $N$ are considered to be simple enough to let \acp{DM} decide, without the help of the analyst, if they endorse them. It is then possible to derive $R$ from the chosen $N$.
@@ -220,8 +206,7 @@ Furthermore, the fact that a norm has been considered acceptable in the abstract
 
 \subsubsection{\texorpdfstring{$A_I$}{AI}: informally testing whether \texorpdfstring{\aclp{DM}}{\acp{DM}} endorse \protectforpdf{N}}
 The blatant weaknesses of $A_E$ suggest a pragmatic variant, $A_I$, with $I$ standing for “informal”. 
-This is the attitude of decision analysts who reject $A_E$'s idea that decision scientists can decide on $N$ on behalf of \acp{DM}, and therefore make a point of informally discussing the meaning of $N$ with \acp{DM} to verify that %the specifics of the situation are such that 
-$N$ appears endorsable to the \acp{DM}.%, or to let the \acp{DM} choose or parameterize the norms applicable to the situation.
+This is the attitude of decision analysts who reject $A_E$'s idea that decision scientists can decide on $N$ on behalf of \acp{DM}, and therefore make a point of informally discussing the meaning of $N$ with \acp{DM} to verify that $N$ appears endorsable to the \acp{DM}.
 
 \citet{roy_multicriteria_1996} can be seen as a prominent supporter of $A_I$. 
 Indeed, although he did not use the term “norm” to refer to elements underlying recommendations, he emphasized the need to develop interactions with the \ac{DM} to ensure that, not only the recommendations, 
@@ -251,7 +236,7 @@ Lastly, \citet{ormerod_justifying_2010} even argues that a willingness to justif
  
 This pervasive reference to a justification requirement is, however, arguably too vague. Indeed, the term ``justification'' is extremely polysemous. 
 In some contexts, one might call any argument, however spurious or ill-conceived, a ``justification'', and the above contributions do not elaborate on how to make sure that a given purported justification really qualifies as a ``successful'' or ``good'' justification (or as a justification \emph{stricto sensu}) -- which is a difficult question, \emph{a fortiori} when purported justifications have to do with normative elements.
-\citet{jackson_towards_1999}, for example, details prototypical arguments that can be used to structure justifications, but does not explore how to ensure that an argument based on his guidelines qualifies as a justification: his ``guidelines'' are, in that sense, more ``buiding blocks'' than guidelines. 
+\citet{jackson_towards_1999}, for example, details prototypical arguments that can be used to structure justifications, but does not explore how to ensure that an argument based on his guidelines qualifies as a justification: his ``guidelines'' are, in that sense, more ``building blocks'' than guidelines. 
 $A_J$ hence appears unsatisfactory because it takes for granted that the notion of justification is transparent and unproblematic, whereas on due reflection this notion appears ambiguous.
 
 
@@ -296,7 +281,7 @@ by introducing a “weak” transcendental deduction of the tenets of “discour
 \citet{habermas_theorie_1981} argues that agents communicating with each other make validity claims of three sorts: veritative claims about truth, normative claims about values and norms, and authenticity claims about expressions concerning their inner life, feelings and consciousness. 
 The role that norms play is therefore clearly circumscribed in Habermas's framework, it concerns one kind of validity claims among others, and Habermas would probably not claim that recommendations based on such norms can be justified. 
 \cite{habermas_moralbewustsein_1983} however does not locate the tenets of “discourse ethics” at this level. 
-He rather argues that all the acts and deeds that consist in making validity claims are oriented by a strive for intercomprehension, which lies at the core of communicative action. And he identifies the tenets of discourse ethics as conditions of possibility for this intercomprehension-oriented activity. 
+He rather argues that all the acts and deeds that consist in making validity claims are oriented by a strive for inter-comprehension, which lies at the core of communicative action. And he identifies the tenets of discourse ethics as conditions of possibility for this inter-comprehension-oriented activity. 
 
 
 The norms specifically constituting Habermas's discourse ethic are hence anchored in his philosophy of society, which endows them with a specific justification referring to Habermas's theory of communicative action.
@@ -483,7 +468,7 @@ Our approach suggests a path to implement this requirement in practice.
 
 \section{Conclusions}
 \label{sec:concl}
-In this article, we have introduced an account of how, as decision analysts applying decision sciences to concrete situations, we should cope with the normative aspects of our endeavor. %For that purpose, we have explored a series of attitudes with respect to $N$ observed in the decision sciences literature.
+In this article, we have introduced an account of how, as decision analysts applying decision sciences to concrete situations, we should cope with the normative aspects of our endeavor.
 Several aspects of this account echo ideas developed by American pragmatist philosophers \citep{ormerod_history_2006}. 
 In particular, our approach to ``justification'' is anchored in an analysis of the usages of the term\begin{changebar}. Besides, w\end{changebar}e propose to unfold the requirement to produce justification as a practical procedure and, even more fundamentally, 
 our original research question only makes sense against the pragmatic background idea that norms play a key role even in activities that other approaches would categorize as entirely concerned with pure facts.
@@ -509,7 +494,7 @@ In our view, the analysis of these more complex issues can benefit from our expl
 Similarly, although the requirement to justify can participate in unveiling, and thereby denouncing, power relations which could otherwise have distorted discussions and decisions, 
 we cannot claim at this stage that our framework addresses all the problems liable to be generated by the pervasiveness of power relations in decision processes \citep{cronin_issues_2014}.
 Another important aspect of decision processes that our framework does not explicitly addresses is the idea that \ac{OR} might fail to serve the interest of the public or of those who cannot afford it \citep{rosenhead_report_1986}, 
-which suggests a need for more critical and socially responsible \ac{OR} practices \citep{jackson_systems_2000,ulrich_beyond_2003}. This is reinforced by the context of environmental crisis, already stressed by Churchman (1970).
+which suggests a need for more critical and socially responsible \ac{OR} practices \citep{jackson_systems_2000,ulrich_beyond_2003}. This is reinforced by the context of environmental crisis, already stressed by \citet{churchman_operations_1970}.
 
 A prominent avenue for future research is therefore to explore how our framework can contribute to criticize and improve frameworks devoted to tackle these complex issues, such as ``system of systems methodology'' \citep{jackson_towards_1984}, ``critical heuristics'' \citep{ulrich_critical_1987}, 
 ``critical rationalism'' \citep{ormerod_critical_2014}, ``systems thinking'' \citep{mingers_review_2010}, ``problem structuring methods'' \citep{hector_problem-structuring_2009}, ``cognitive mapping'' \citep{eden_analyzing_2004}, ``community operational research'' \citep{johnson_emerging_2018} or 
