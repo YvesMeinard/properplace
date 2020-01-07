@@ -32,8 +32,9 @@
 \usepackage{bookmark}% hyperref doc says: Package bookmark replaces hyperref’s bookmark organization by a new algorithm (...) Therefore I recommend using this package.
 \usepackage{cleveref}
 \newcommand{\protectforpdf}[1]{\texorpdfstring{\ensuremath{#1}}{#1}}
-%Making sure we follow: “If your source files are in LaTeX, please visit our LaTeX site.” (in https://www.elsevier.com/journals/european-journal-of-operational-research/03772217/guide-for-authors), which gives a bibliographic style file. Style is not consistent with examples given elsewhere in the authors guide.
-\bibliographystyle{elsarticle-harv-nourl}
+%Making sure we follow: “If your source files are in LaTeX, please visit our LaTeX site.” (in https://www.elsevier.com/journals/european-journal-of-operational-research/03772217/guide-for-authors), which gives a bibliographic style file. Style is not consistent with examples given elsewhere in the authors guide. BUT it misses urls, dois, ISBNs, that’s rejectable.
+%\bibliographystyle{elsarticle-harv-nourl}
+\bibliographystyle{abbrvnat}
 \usepackage{etoolbox}
 \apptocmd{\thebibliography}{\raggedright}{}{}
 \usepackage[single]{acro} 
