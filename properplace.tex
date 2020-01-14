@@ -49,7 +49,7 @@
 \newcommand{\commentYM}[1]{\textcolor{green}{YM: #1}}
 \newcommand{\commentOC}[1]{\textcolor{red}{OC: #1}}
 \newcommand{\commentOCf}[1]{\textcolor{red}{\selectlanguage{french}{OC : #1}}}
-\newcommand{\possessivecite}[1]{\citeauthor{#1}’s \citeyearpar{#1}}
+\newcommand{\possessivecite}[2][]{\citeauthor{#2}’s \citeyearpar[#1]{#2}}
 \newunicodechar{ℝ}{\mathbb{R}}
 \newunicodechar{≠}{\ensuremath{\neq}}
 \newunicodechar{≤}{\ensuremath{\leq}}
@@ -110,9 +110,9 @@ that, due to this importance of $N$, objectivity and scientific neutrality, if u
 However, most authors also claim that \ac{OR} 
 analysts have a duty to remain neutral with respect to \acp{DM}' objectives and values
 -- echoing Kant’s tenet of duty ethics, translated by \citet{reisach_creation_2016} as a right that every human being enjoys to set her own objectives.
-\possessivecite{brans_or_2002} ``Oath of Prometheus'' (p. 195) likewise includes a reference to \acp{DM}' goals 
-(``As a consultant or an analyst, I commit myself (...) \emph{to assisting [decision makers] to meet their goals} within the limits of sustainable development''--emphasis ours).
-Although there are debates among \ac{OR} researchers and practitioners on the extent to which analysts should support the values and objectives of \acp{DM} \citep{brans_ethics_2007}, even those authors who are the most prone to accept that analysts can question and override \acp{DM}' values and objectives acknowledge that \acp{DM} have a \emph{ceteris paribus} legitimacy to express their values and objectives and to expect them to be respected (this is the case, in particular, of contributins anchored in critical theory-e.g. \citet{jackson_towards_1984,mingers_ethics_2011}).
+\possessivecite[p. 195]{brans_or_2002} “Oath of Prometheus” likewise includes a reference to \acp{DM}' goals: 
+“As a consultant or an analyst, I commit myself (...) \emph{to assisting [decision makers] to meet their goals} within the limits of sustainable development” (emphasis ours).
+Although there are debates among \ac{OR} researchers and practitioners on the extent to which analysts should support the values and objectives of \acp{DM} \citep{brans_ethics_2007}, even those authors who are the most prone to accept that analysts can question and override \acp{DM}' values and objectives acknowledge that \acp{DM} have a \emph{ceteris paribus} legitimacy to express their values and objectives and to expect them to be respected (this is the case, in particular, of contributions anchored in critical theory \citep{jackson_towards_1984, mingers_ethics_2011}).
 A weaker form of neutrality, encapsulated in the requirement to refrain from being \emph{dogmatic, paternalist, proselyte, or authoritarian}, by imposing $N$ we favor in our interaction with \acp{DM}, is hence largely accepted. However, because ``most contributions to the ‘ethics’ of \ac{OR}, well-taken as they are in drawing our attention to the value content of all \ac{OR} practice, tell us (...) little about how to handle ethical conflicts'' \citep[p. 294]{ormerod_operational_2013},
 the existing literature barely explores how to make sure that the $N$ underlying recommendations do not conflict with \acp{DM}' values. Our aim in this article is to make up for this lacuna by enabling decision analysts to determine whether a given norm underlying a given recommendation can be adopted.
 
@@ -152,7 +152,7 @@ These requirements are fleshed out as a series of four simple rules that applica
 \section{Varieties of attitudes with respect to N}
 \label{sec:existing}
 In this section, we review attitudes with respect to $N$ in the literature in \ac{OR}, economics and philosophy.
-Our approach for this review is interpretative: we infer a proposal for a classification of attitudes with respect to $N$ based on our knowledge of the literature in economics, philosophy and \ac{OR}. This methodological choice is motivated by the fact that interpretative approaches allow the articulating of refined judgments on the meaning of practices such as \ac{OR} (echoing the importance of narrative analysis to understand such practices \citep{white_death_1994}).
+Our approach for this review is interpretative: we infer a proposal for a classification of attitudes with respect to $N$ based on our knowledge of the literature in economics, philosophy and \ac{OR}. This methodological choice is motivated by the fact that interpretative approaches allow the articulation of refined judgments on the meaning of practices such as \ac{OR} (echoing the importance of narrative analysis to understand such practices \citep{white_death_1994}).
 That said, like any hermeneutic claim, the one we are about to articulate is tentative.
 A more systematic methodology, complementing our qualitative analysis with a quantitative review of the literature, would certainly provide additional, important insights. 
 However, deploying such an approach rigorously in our case raises numerous major methodological challenges which cannot be satisfactorily addressed in the limited space of the present contribution.
@@ -195,7 +195,7 @@ Decision scientists holding this attitude claim that they have the collective sk
 But they do not consider that \acp{DM} should take part in such discussions, because these are technical, difficult discussions. 
 When they arrive at conclusions including recommendations $R$, predicated on $N$ encapsulating axioms that decision scientists collectively deem commendable, they consider themselves entitled to jump to $R$ without bothering to help \acp{DM} to make up their mind about $N$. 
 
-Attitude $A_E$ consists, for the decision analyst, in endorsing a higher-level norm $\mathscr{N}_E$ claiming that expert discussions about norms enable them to make decisions about norms on behalf of \acp{DM}, a questionable moral stance that \citet{estlund_democratic_2009} calls the ``expert/boss fallacy'' (p. 40). 
+Attitude $A_E$ consists, for the decision analyst, in endorsing a higher-level norm $\mathscr{N}_E$ claiming that expert discussions about norms enable them to make decisions about norms on behalf of \acp{DM}, a questionable moral stance that \citet[p. 40]{estlund_democratic_2009} calls the ``expert/boss fallacy''. 
 It is unlikely that many decision scientists really wholeheartedly endorse it. 
 Besides, to the best of our knowledge, the literature does not specify what is precisely required (when adopting  $\mathscr{N}_E$) for an expert to decide that “enough” discussion has taken place in the expert community and that a consensus has been reached concerning a given $N$. 
 Furthermore, the fact that a norm has been considered acceptable in the abstract by the scientific community does not guarantee that it is acceptable in its use by the analyst in a concrete context.
@@ -221,15 +221,14 @@ Like $A_E$, it is anchored in a higher level norm $\mathscr{N}_I$. But this high
 
 
 Although they do not explicitly tackle our problem, many authors in the literature, especially in ethics and methodology of \ac{OR}, endorse a fourth attitude that can seem to offer a solution to our problem. This candidate solution consists in advocating that analysts should \emph{justify} the decision support they provide. If applied to our reflexion on $N$, this idea suggests that analysts should justify the $N$ from which their recommendations derive (or, equivalently, should produce assertions concerning these $N$ which are all ``warranted'').
-For example, \citet{lahtinen_why_2017} advocate \ac{OR} practices following an ``ideal path'' (p. 75), ``formed by well-\emph{justified} choices'' (p. 75), which presumably include choices concerning $N$, such as choices of goals or principles.
-Similarly, \possessivecite{diekmann_moral_2013} defense of ``transparency'' (p. 135), in his exploration of the principles that should underlie modeling, is explicitly anchored in a justification requirement, defining transparency in terms of ``open communication'' and ``clarification'' (p. 135). His presentation of ``integrity'' (p. 135) explicitly refers to justification.
+For example, \citet[p. 75]{lahtinen_why_2017} advocate \ac{OR} practices following an ``ideal path'', ``formed by well-\emph{justified} choices'', which presumably include choices concerning $N$, such as choices of goals or principles.
+Similarly, \possessivecite[p. 135]{diekmann_moral_2013} defense of ``transparency'', in his exploration of the principles that should underlie modeling, is explicitly anchored in a justification requirement, defining transparency in terms of ``open communication'' and ``clarification''. His presentation of ``integrity'' explicitly refers to justification.
 In the context of reviewing the morality of \ac{OR} practice, \citet{ormerod_operational_2013} ask how analysts can justify their \emph{ethical} positions.
  \possessivecite{beauchamp_principles_2009} criteria to balance principles when they conflict (in matters of biomedical ethics) also explicitly refer to justification (in this case: justification of the $N$ used to balance principles).
 \possessivecite{white_death_1994} call to demystify expertise enjoin experts to justify their interventions, which, given the authors' insistence on the post-modern view that expertise is pervasively value-laden, involves a justification of $N$.
-Although he does not focus on values or norms, \citet{jackson_towards_1999} concurs on the importance of justification and spells out ``guidelines'' that justifications ``must'' follow to “claim to have used a management science methodology according to a particular rationale'' (p. 21).
+Although he does not focus on values or norms, \citet[p. 21]{jackson_towards_1999} concurs on the importance of justification and spells out ``guidelines'' that justifications ``must'' follow to “claim to have used a management science methodology according to a particular rationale''.
 Lastly, \citet{ormerod_justifying_2010} even argues that a willingness to justify, and in particular to justify \emph{values} underlying OR, is a necessary condition for decision scientists to present themselves as \emph{scientists}.
 
- 
 This pervasive reference to a justification requirement is, however, arguably too vague. Indeed, the term ``justification'' is extremely polysemous. 
 In some contexts, one might call any argument, however spurious or ill-conceived, a ``justification'', and the above contributions do not elaborate on how to make sure that a given purported justification really qualifies as a ``successful'' or ``good'' justification (or as a justification \emph{stricto sensu}) -- which is a difficult question, \emph{a fortiori} when purported justifications have to do with normative elements.
 \citet{jackson_towards_1999}, for example, details prototypical arguments that can be used to structure justifications, but does not explore how to ensure that an argument based on his guidelines qualifies as a justification: his ``guidelines'' are, in that sense, more ``building blocks'' than guidelines. 
@@ -449,17 +448,15 @@ But as it stands, the consultants who tried to solve the problem using \ac{CBA} 
 Accordingly, this endeavor to provide decision aid was justified, in the sense articulated above.
 \end{example}
 
-The practical rules spelled out above echo \possessivecite{lahtinen_why_2017} ``path'' approach to \ac{OR} activities, and their promotion of an ``ideal path'', which they describe as a ``path formed by well-justified choices'' (p. 75).
-Our own practical rules aim at spelling out in more concrete terms the requirements that \citet{lahtinen_why_2017} refer to using terms such as ``well-justified'', ``essential characteristics'', ``reflective'' (p. 75).
-Similarly, our \cref{it:argue} echoes \possessivecite{funtowicz_science_1993} claim that in post-normal science ``values are not presupposed but made explicit'', and our \cref{it:criticize} is reminiscent of \citeauthor{funtowicz_science_1993}’s ``extended peer community'' (p. 739).
+The practical rules spelled out above echo \possessivecite[p. 75]{lahtinen_why_2017} ``path'' approach to \ac{OR} activities, and their promotion of an ``ideal path'', which they describe as a ``path formed by well-justified choices''.
+Our own practical rules aim at spelling out in more concrete terms the requirements that \citet[p. 75]{lahtinen_why_2017} refer to using terms such as ``well-justified'', ``essential characteristics'', ``reflective''.
+Similarly, our \cref{it:argue} echoes \possessivecite[p. 739]{funtowicz_science_1993} claim that in post-normal science ``values are not presupposed but made explicit'', and our \cref{it:criticize} is reminiscent of \citeauthor{funtowicz_science_1993}’s ``extended peer community''.
 However, in our view \citeauthor{funtowicz_science_1993} neglect the difficulties involved in implementing \cref{it:argue,it:criticize}, which prompted us to introduce \cref{it:defend,it:provisional} and, as opposed to \citeauthor{funtowicz_science_1993}, we argue that the \crefrange{it:argue}{it:provisional} should be deployed in all decision support processes, 
 not only in situations characterized by high decision stakes and systems uncertainties.
 Our proposed practical rule should therefore be seen as complementary to the above contributions, which they contribute to strengthen by clarifying a preliminary crucial step that they tend to neglect.
-A similar relation exists with \citet{mingers_ethics_2011}, who delineates applications of Habermas' discourse ethics to \ac{OR} practice, but uses the term ``justifiable'' (p. 121) without defining it and 
-advocates that what is important is ``that every effort is made to involve and engage all the relevant stakeholders in a genuine and continuing dialogue'' (p. 121) without specifying how to ensure that the dialog is ``genuine''.
-Although, at this stage, we do not explore in concrete behavioral terms the interaction between analysts and \acp{DM}, 
-our approach also interestingly echoes \citet{hamalainen_importance_2013} who emphasize, in their review of the importance of taking account of behavioral aspects in \ac{OR}, 
-``the phenomenon that people are less influenced by decision problem framing, that is, by the way in which the information is presented, if they are asked to give written reasons for their decision'' (p. 628).
+A similar relation exists with \citet[p. 121]{mingers_ethics_2011}, who delineates applications of Habermas' discourse ethics to \ac{OR} practice, but uses the term ``justifiable'' without defining it and advocates that what is important is ``that every effort is made to involve and engage all the relevant stakeholders in a genuine and continuing dialogue'' without specifying how to ensure that the dialog is ``genuine''.
+Although, at this stage, we do not explore in concrete behavioral terms the interaction between analysts and \acp{DM}, our approach also interestingly echoes \citet[p. 628]{hamalainen_importance_2013} who emphasize, in their review of the importance of taking account of behavioral aspects in \ac{OR}, 
+``the phenomenon that people are less influenced by decision problem framing, that is, by the way in which the information is presented, if they are asked to give written reasons for their decision''.
 Our approach suggests a path to implement this requirement in practice.
 
 \section{Conclusions}
@@ -483,7 +480,7 @@ We see our contribution as an attempt to articulate (relatively) precise require
 It provides neither a metric nor generally applicable mechanical means to compare any two applications of decision sciences without discussions (\citet{cailloux_formal_2018} introduce the rudiments of a procedure liable to fulfill this more ambitious agenda).
 
 Besides, our work in this article is focused on relatively simple situations where the recommendations elaborated by the analyst are offered to a single, well-identified \ac{DM}.
-We thereby leave aside difficulties associated with group decisions \citep{jackson_towards_1984}, stakeholder identification \citep{wang_systemic_2015,gregory_stakeholder_2019} and with boundary judgments involving the integration of several individuals in a collective \ac{DM} \citep{midgley_systemic_2000}
+We thereby leave aside difficulties associated with group decisions \citep{jackson_towards_1984}, stakeholder identification \citep{wang_systemic_2015, gregory_stakeholder_2019} and with boundary judgments involving the integration of several individuals in a collective \ac{DM} \citep{midgley_systemic_2000}
 -- not for lack of interest, but because they are too complex to be tackled in the limited space of this article. One might want to criticize our approach by claiming that this restriction in effect confines our analysis to highly stylized decision processes never exemplified in real-life decision analysis.
 We rather see our contribution as an exploration of a fundamental aspect shared by all decision support processes, which is, in our view, insufficiently analyzed in the literature addressing decision processes in their full concrete complexity.
 In our view, the analysis of these more complex issues can benefit from our exploration, in the sense that the difficulties involved in aiding a single \ac{DM} to make up his mind about the relevance of accepting a given norm are exacerbated in these more complex, pluri-actor settings. 
